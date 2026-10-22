@@ -1373,11 +1373,13 @@
       input.title = label + ' (0–1)';
       input.addEventListener('change', function () {
         var current = M.parseRect(node);
-        var value = parseFloat(input.value);
-        if (!current || !isFinite(value)) { syncRectInputs(); return; }
+        var raw = input.value.trim();
+        // An empty box means 0; junk text falls back to the value already stored.
+        var value = raw === '' ? 0 : parseFloat(raw);
+        if (!current || !isFinite(value)) { syncRectInputs(true); return; }
         current[i] = value;
         applyEdit(function () { M.writeRectValues(node, current); });
-        syncRectInputs();
+        syncRectInputs(true);
       });
       floats.append(input);
     });
@@ -1392,18 +1394,22 @@
     var values = { x: 0, y: 0, w: 0, h: 0 };
     var ok = true;
     grid.querySelectorAll('input[data-field]').forEach(function (input) {
-      var value = Number(input.value);
+      // A cleared box becomes 0 instead of leaving the field blank.
+      var raw = input.value.trim();
+      var value = raw === '' ? 0 : Number(raw);
       if (!isFinite(value)) ok = false;
       values[input.dataset.field] = value;
     });
-    if (!ok) { syncRectInputs(); return; }
+    if (!ok) { syncRectInputs(true); return; }
     applyEdit(function () { M.writeRectPixels(node, values, W(), H()); });
-    syncRectInputs();
+    syncRectInputs(true);
     renderCanvas();
     updateStageInfo();
   }
 
-  function syncRectInputs() {
+  // force also refreshes the box that still has focus, so a cleared field snaps
+  // back to its stored value instead of staying empty until the next selection.
+  function syncRectInputs(force) {
     var item = activeItem();
     if (!item) return;
     var rects = M.rectsOf(item);
@@ -1416,10 +1422,10 @@
       var box = M.rectToPixels(rect, W(), H());
 
       group.querySelectorAll('input[data-field]').forEach(function (input) {
-        if (document.activeElement !== input) input.value = String(box[input.dataset.field]);
+        if (force || document.activeElement !== input) input.value = String(box[input.dataset.field]);
       });
       group.querySelectorAll('input[data-float]').forEach(function (input) {
-        if (document.activeElement !== input) input.value = M.formatFloat(rect[Number(input.dataset.float)]);
+        if (force || document.activeElement !== input) input.value = M.formatFloat(rect[Number(input.dataset.float)]);
       });
       var dims = group.querySelector('summary .dims');
       if (dims) dims.textContent = box.x + ', ' + box.y + ' · ' + box.w + ' × ' + box.h;
@@ -1825,8 +1831,13 @@
 
     document.addEventListener('keydown', function (event) {
       var tag = (event.target.tagName || '').toLowerCase();
-      var typing = tag === 'input' || tag === 'textarea' || tag === 'select';
+      var typing = tag === 'input' || tag === 'textarea';
+      var arrow = event.key.indexOf('Arrow') === 0;
       var meta = event.ctrlKey || event.metaKey;
+
+      // A focused <select> would otherwise consume the arrows and change the base
+      // resolution; keep keyboard nudging working instead of moving the dropdown.
+      if (arrow && tag === 'select') event.preventDefault();
 
       if (meta && event.key.toLowerCase() === 's') {
         event.preventDefault();
@@ -1846,7 +1857,7 @@
       }
       if (typing) return;
 
-      if (event.key.indexOf('Arrow') === 0 && activeItem()) {
+      if (arrow && activeItem()) {
         event.preventDefault();
         var step = event.shiftKey ? 10 : 1;
         var dx = event.key === 'ArrowLeft' ? -step : event.key === 'ArrowRight' ? step : 0;
