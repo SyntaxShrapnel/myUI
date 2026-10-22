@@ -8,8 +8,20 @@ Files for the *True Dark Mode* UI mod for MX Bikes, plus a browser-based editor 
 | `true dark mode/` | The mod: `ui.ui`, 15 `.mnu` menus, `english.str`, TGA sprites |
 | `index.html`, `assets/` | The MNU editor — plain HTML/CSS/JS, no build step |
 | `tests/` | Node checks for the `.mnu` parser/serializer and the TGA decoder |
+| `.github/workflows/pages.yml` | Publishes the `public` branch to GitHub Pages |
 
 ![The editor with the main menu selected](artifacts/editor-main.png)
+
+## Hosted editor
+
+The `public` branch is published with GitHub Pages:
+**https://syntaxshrapnel.github.io/myUI/**
+
+A push to `public` runs the *Deploy editor to GitHub Pages* workflow, which uploads the
+branch root as the site — there is no build step. The repository's **Settings → Pages →
+Source** must be set to **GitHub Actions** once for this to work. On the hosted copy the
+bundled mod is read-only, so *Save* downloads the edited file; open a local mod folder to
+write changes in place.
 
 ## The editor
 
