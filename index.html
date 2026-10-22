@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MX Bikes MNU Editor — True Dark Mode</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span class="logo">MXB</span><span class="brand-text">MNU Editor</span></div>
+
+  <button id="btn-folder" class="btn primary" title="Pick the folder that holds ui.ui and the .mnu files">Open mod folder…</button>
+  <button id="btn-files" class="btn" title="Pick one or more .mnu / .ui / .str / .tga files">Open files…</button>
+
+  <div class="sep"></div>
+
+  <span class="field"><span class="field-label">Ratio</span><span id="ratio-label" class="badge">16:9</span></span>
+  <label class="field"><span class="field-label">Base</span>
+    <select id="base-select" title="W and H used by the rect formula"></select>
+  </label>
+
+  <div class="grow"></div>
+
+  <button id="btn-undo" class="btn icon" title="Undo (Ctrl+Z)">↶</button>
+  <button id="btn-redo" class="btn icon" title="Redo (Ctrl+Shift+Z)">↷</button>
+  <div class="sep"></div>
+  <button id="btn-save" class="btn" title="Save the current file (Ctrl+S)">Save</button>
+  <button id="btn-save-all" class="btn" title="Save every modified file">Save all</button>
+  <button id="btn-help" class="btn icon" title="Help and file format notes">?</button>
+</header>
+
+<main class="layout">
+  <aside class="panel files-panel">
+    <div class="panel-head">
+      <input id="search" type="search" placeholder="Search dialogs and items…" autocomplete="off">
+    </div>
+    <div id="tree" class="tree"></div>
+    <div class="panel-foot">
+      <button id="btn-expand" class="link">Expand all</button>
+      <button id="btn-collapse" class="link">Collapse all</button>
+    </div>
+  </aside>
+
+  <section class="workspace">
+    <div class="stage-frame">
+      <div class="stage" id="stage">
+        <canvas id="canvas"></canvas>
+        <div class="stage-empty" id="stage-empty">
+          <h2>No dialog selected</h2>
+          <p>Open the mod folder (the one with <code>ui.ui</code> and the <code>.mnu</code> files),
+             then pick a dialog on the left.</p>
+          <p class="muted">Drag an item to move it, drag a corner or edge handle to resize it,
+             or type exact pixel values in the inspector.</p>
+        </div>
+      </div>
+    </div>
+    <div class="stage-bar">
+      <span id="stage-info" class="stage-info muted">—</span>
+      <label class="check"><input type="checkbox" id="opt-grid"> Grid</label>
+      <label class="check"><input type="checkbox" id="opt-labels"> Labels</label>
+      <label class="check"><input type="checkbox" id="opt-sprites" checked> Sprites</label>
+      <button id="btn-source" class="btn small">View source</button>
+    </div>
+  </section>
+
+  <aside class="panel inspector-panel">
+    <div id="inspector" class="inspector"></div>
+  </aside>
+</main>
+
+<footer class="statusbar">
+  <span id="status">Ready</span>
+  <span class="grow"></span>
+  <span id="cursor" class="muted"></span>
+</footer>
+
+<input type="file" id="file-input" multiple accept=".mnu,.ui,.str,.tga,.TGA" hidden>
+<input type="file" id="dir-input" webkitdirectory multiple hidden>
+
+<dialog id="help-dialog" class="modal">
+  <form method="dialog">
+    <h2>MX Bikes MNU editor</h2>
+    <p>The editor reads and writes the plain-text <code>.mnu</code> dialog scripts directly.
+       Every line you do not touch is written back byte-for-byte, so a saved file stays
+       identical to the original except for the values you changed.</p>
+
+    <h3>Rectangles</h3>
+    <p>Rect values are floats from 0 to 1 of the UI surface, scaled by the aspect ratio in
+       <code>ui.ui</code> (this mod: <code>ratio 16:9</code>). With a base of 1600 × 900:</p>
+    <pre class="formula">X      = round(X1 * W)
+Y      = round(Y1 * H)
+Width  = round(X2 * W) - X
+Height = round(Y2 * H) - Y</pre>
+    <p>The pixel fields in the inspector are this formula in both directions: type 390 for X and
+       the file gets <code>0.243750</code>. Coordinates are relative to the dialog's own surface,
+       which is the full screen.</p>
+
+    <h3>Loading and saving</h3>
+    <ul>
+      <li><b>Open mod folder</b> gives the editor write access, so <b>Save</b> writes straight back into the folder.</li>
+      <li><b>Open files</b> (or dragging files onto the page) cannot write to disk, so <b>Save</b> downloads the file.</li>
+      <li>When the editor is served from this repo it tries to load <code>true dark mode/</code> automatically;
+          saving then downloads the file.</li>
+    </ul>
+
+    <h3>Keys</h3>
+    <ul>
+      <li><b>Drag</b> inside an item to move it, <b>drag a handle</b> (or a corner) to resize.</li>
+      <li><b>Arrow keys</b> nudge by 1 px, <b>Shift + arrows</b> by 10 px, <b>Shift while dragging</b> snaps to 10 px.</li>
+      <li><b>Ctrl/⌘ + Z</b> undo, <b>Ctrl/⌘ + Shift + Z</b> redo, <b>Ctrl/⌘ + S</b> save.</li>
+    </ul>
+
+    <p class="muted">The preview approximates the game's renderer: sprites are drawn from the TGA files,
+       text uses a system font at the size stored in the file, and colours are the file's ARGB values.</p>
+
+    <div class="modal-actions"><button class="btn primary" value="close">Close</button></div>
+  </form>
+</dialog>
+
+<dialog id="source-dialog" class="modal wide">
+  <h2 id="source-title">Source</h2>
+  <textarea id="source-text" readonly spellcheck="false"></textarea>
+  <div class="modal-actions">
+    <span id="source-note" class="muted grow"></span>
+    <button id="btn-copy-source" class="btn">Copy</button>
+    <button id="btn-close-source" class="btn primary">Close</button>
+  </div>
+</dialog>
+
+<script src="assets/mnu-format.js"></script>
+<script src="assets/tga.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
