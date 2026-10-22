@@ -451,6 +451,7 @@
 
       var fileDetails = document.createElement('details');
       fileDetails.className = 'tree-file';
+      var fileBody = el('div', 'tree-file-items');
       var key = docKey(doc);
       fileDetails.open = query ? true : state.openDocs.has(key);
       fileDetails.addEventListener('toggle', function () {
@@ -482,11 +483,21 @@
         var itemCount = el('span', 'tree-count', M.itemsOf(entry.dialog).length + '');
         dialogSummary.append(itemCount);
         dialogSummary.addEventListener('click', function () {
+          // Clicking the dialog that is already selected just collapses or expands
+          // it, so the preview stays on that dialog while its item list is closed.
+          // The native <details> toggle follows this handler; mirror it in state now
+          // so an immediate re-render cannot force the dialog back open.
+          if (activeDocRef === doc && entry.dialogIndex === activeDialogIndex) {
+            if (dialogDetails.open) state.openDialogs.delete(dKey);
+            else state.openDialogs.add(dKey);
+            return;
+          }
           selectDialog(docIndex, entry.dialogIndex, false);
         });
         dialogDetails.append(dialogSummary);
 
         var items = M.itemsOf(entry.dialog);
+        var itemList = el('div', 'tree-items');
         entry.items.forEach(function (item) {
           var index = items.indexOf(item);
           var row = el('div', 'tree-item');
@@ -508,12 +519,14 @@
             event.stopPropagation();
             selectItem(docIndex, entry.dialogIndex, index);
           });
-          dialogDetails.append(row);
+          itemList.append(row);
         });
+        if (itemList.childElementCount) dialogDetails.append(itemList);
 
-        fileDetails.append(dialogDetails);
+        fileBody.append(dialogDetails);
       });
 
+      if (fileBody.childElementCount) fileDetails.append(fileBody);
       host.append(fileDetails);
     });
 

@@ -221,6 +221,15 @@ details[open] > summary::before { transform: rotate(90deg); }
 
 details > summary:hover { background: #1a1a20; }
 
+/* Fainter frame around everything one .mnu contains, so file boundaries show. */
+.tree-file-items {
+  margin: 2px 0 8px 5px;
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.012);
+}
+
 .tree-dialog > summary {
   color: #d5d5dd;
   font-family: var(--mono);
@@ -231,27 +240,50 @@ details > summary:hover { background: #1a1a20; }
 .tree-dialog.is-active > summary,
 .tree-file.is-active > summary { background: var(--accent-soft); color: #eaf7ff; }
 
+/* Item rows sit in a bordered list so a dialog's children read as one block. */
+.tree-items {
+  margin: 4px 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.018);
+  overflow: hidden;
+}
+
+.tree-dialog.is-active > .tree-items {
+  border-color: rgba(88, 196, 245, 0.38);
+  background: rgba(88, 196, 245, 0.035);
+}
+
 .tree-item {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 3px 6px 3px 30px;
-  border-radius: 5px;
+  padding: 4px 8px 4px 12px;
   cursor: pointer;
-  color: #c4c4cd;
+  color: #c9c9d2;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  border-bottom: 1px solid var(--line-soft);
 }
 
-.tree-item:hover { background: #1a1a20; }
-.tree-item.is-active { background: var(--accent-soft); color: #eaf7ff; box-shadow: inset 2px 0 0 var(--accent); }
+.tree-item:nth-child(even) { background: rgba(255, 255, 255, 0.022); }
+.tree-item:last-child { border-bottom: 0; }
+
+.tree-item:hover { background: #1e1e25; }
+.tree-item.is-active {
+  background: var(--accent-soft);
+  color: #eaf7ff;
+  box-shadow: inset 2px 0 0 var(--accent);
+  border-bottom-color: rgba(88, 196, 245, 0.22);
+}
 
 .tree-item .tag {
   font-family: var(--mono);
   font-size: 9.5px;
-  color: var(--muted);
-  border: 1px solid var(--line);
+  color: #9b9ba7;
+  background: #17171c;
+  border: 1px solid #2b2b33;
   border-radius: 3px;
   padding: 0 3px;
   flex: none;
@@ -260,7 +292,7 @@ details > summary:hover { background: #1a1a20; }
 
 .tree-item .who { overflow: hidden; text-overflow: ellipsis; }
 
-.tree-item .dims { margin-left: auto; color: #6d6d78; font-family: var(--mono); font-size: 10.5px; flex: none; }
+.tree-item .dims { margin-left: auto; color: #7f7f8b; font-family: var(--mono); font-size: 10.5px; flex: none; }
 
 .dot {
   width: 6px;
