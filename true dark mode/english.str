@@ -1,0 +1,1394 @@
+Testing
+Single Player
+Single_race
+Multi Player
+Exit
+Exit
+Back
+Back
+settings
+Settings
+gfx_tab
+Graphics
+input_tab
+Input
+misc_tab
+Misc
+profiles
+My Profiles
+Bestlaps
+My Best Laps
+Viewreplays
+My Replays
+yes
+YES
+no
+NO
+cancel
+Cancel
+track_info
+Track Info
+Done
+Done
+exit_confirm
+Exit?
+options_confirm
+Discard Changes?
+Forcefeedback
+Force Feedback
+volume_text
+Master Volume:
+Lean
+Lean
+Throttle
+Throttle
+Brake
+Brake
+Join
+Join
+Start
+Start
+Refresh_sessions
+Refresh
+Shiftup
+Shift Up
+Shiftdown
+Shift Down
+Calibration
+Calibration
+us_units
+US
+metric_units
+Metric
+date1
+MM/DD/YYYY
+date2
+DD/MM/YYYY
+Units
+Units
+dateformat
+Date Format
+laps
+Laps
+name
+Name:
+delete
+Delete
+view
+View
+event_info
+Event Info
+drawdist_text
+Draw Distance:
+replay
+Replay
+connecting
+Connecting...
+totrack
+To Track
+TT_TESTING
+Start a Testing Session
+TT_EXIT
+Close MX Bikes
+results_tab
+Results
+cc_fullscreen
+Fullscreen
+cc_borderless
+Borderless
+cc_windowed
+Windowed
+close
+Close
+cc_timeout
+Connection Timeout
+cc_wrongpassword
+Wrong password
+cc_serverfull
+Server Full
+sightinglap
+Sighting Lap
+new
+New
+chat
+Chat
+changeview
+Change View
+clutch
+Clutch
+Export
+Export
+ok
+OK
+practicetext
+Practice Length:
+qualifytext
+Qualify Length:
+warmuptext
+Warmup Length:
+racetext
+Races Length:
+sessiontext
+Name:
+passwordtext
+Password:
+brakehelp
+Brake Help
+tractionhelp
+Traction Help
+autoshift
+Automatic Shift
+ffstrength
+Strength:
+author
+Author:
+realisticweather
+Realistic Weather:
+realistic_weather
+Realistic
+temperature
+Temperature:
+wind_direction
+Wind Direction:
+wind_speed
+Wind Speed:
+order_name
+Filename
+order_track
+Track
+order_length
+Length
+order_date
+Date
+chat_button
+Chat
+autochat
+Autochat
+save
+Save
+general
+General
+drivetrain
+Drivetrain
+suspensions
+Suspensions
+fuel
+Fuel:
+copyfrom
+Copy
+aniso_text
+Anisotropic:
+Conditions
+Conditions:
+location
+Location:
+maxclient
+Max Clients:
+track
+Track:
+onboardview
+Onboard View
+mouselook
+Mouse Look
+resolution
+Resolution:
+fov
+Field of View:
+dynamicshadows
+Dynamic Shadows
+reflections
+Reflections
+shaders
+Shaders
+corneranticipation
+Corner Anticipation
+garage
+Garage
+speed
+Speed:
+saveas
+Save As
+modify
+Modify
+screen
+Screen
+Textures
+Textures
+filtering
+Filtering:
+lighting
+Lighting
+refreshrate
+Refresh rate:
+size_texture
+Size:
+RearBrake
+Rear Brake
+heading
+Heading
+lookback
+Look Back
+bpp
+Bits:
+models_detail
+Models Detail:
+controls
+Controls
+forcecockpit
+Force Cockpit
+noaids
+No Aids
+simulation
+Simulation
+ridingaids
+Riding Aids
+weather
+Weather
+undo
+Undo
+setup_overwrite
+Overwrite Setup?
+setup_defaultsave
+Save Default?
+setup_save
+Save Changes?
+setup_delete
+Delete Setup?
+continue
+Continue
+Audio
+Audio
+detaillevels
+Detail Level
+returntopit
+Return To Pit
+quickrace
+Quick Race
+raceweekend
+Race
+hardcoretext
+Hardcore Mode
+settings_race
+Settings
+ui_volume
+User Interface:
+track_length
+Track Length:
+track_altitude
+Track Altitude:
+tyres
+Tyres
+advanced_input
+Advanced
+Rider
+Rider:
+camera
+Camera:
+position
+Position:
+last_lap
+Last Lap:
+best_lap
+Best Lap:
+reset
+Reset
+antialias
+Antialiasing:
+Screenratio
+Screen Ratio:
+dryqualify
+Dry Qualify:
+dry_race
+Dry Race:
+wetsetup
+Wet Qualify:
+live_replay
+Live
+laptime
+Lap Time
+split1
+T1
+split2
+T2
+split3
+T3
+speedlap
+Speed
+name_stand
+Name
+bike_stand
+Bike
+time_stand
+Time
+lap_stand
+Lap
+gap_stand
+Gap
+speed_stand
+Speed
+racetime_stand
+Race Time
+aero_volume
+Onboard Aero Volume:
+rider_fb_lean
+Rider F/B Lean
+autoriderfblean
+Automatic Rider F/B Lean
+raisearm
+Raise arm
+current_setup
+Current:
+wetrace_setup
+Wet Race:
+name_server
+Name
+d_server
+D
+p_Server
+P
+track_server
+Track
+length_server
+Length
+h_server
+H
+status_server
+Status
+ping_server
+Ping
+world
+World
+competitors
+Comp
+lowspeed
+Push Bike
+testing_exit
+Exit from Testing?
+userinterface
+User Interface
+skipintro
+Skip Intro
+bike_profile
+Bike:
+paint_profile
+Bike Paint:
+delete_profile
+Delete Profile?
+track_bestlaps
+Track
+delete_replay
+Delete Replay?
+garage_title
+Garage
+fuel_garage
+Fuel
+keep_resolution
+Keep Resolution?
+exit_race
+Exit from Race?
+Laptime_bestlaps
+Lap time
+date_bestlaps
+Date
+bike_bestlaps
+Bike
+tyretemp_left
+L
+tyretemp_middle
+M
+tyretemp_right
+R
+spring_garage
+Spring:
+preload_garage
+Preload:
+frontsusp_garage
+Front Suspension
+rearsusp_garage
+Rear Suspension
+fronttyre_garage
+Front:
+reartyre_garage
+Rear:
+compression_garage
+Compression:
+rebound_garage
+Rebound:
+finalratio_garage
+Final Drive Ratio
+gears_garage
+Gears
+frontspr_garage
+Front Sprocket:
+rearspr_garage
+Rear Sprocket:
+testingsetup_title
+Testing Setup
+bestlaps_title
+Best Laps
+racesetup_title
+Race Setup
+hostsetup_title
+Host Setup
+forcecockpit_info
+Force Cockpit:
+aids_info
+Aids:
+replay_overwrite
+Overwrite Replay?
+export_overwrite
+Overwrite Export?
+deadzone
+Dead zone:
+linearity
+Linearity:
+smooth
+Smooth
+serverbrowser_title
+Server Browser
+continue_ontrack
+Continue
+tilt
+Tilt:
+w_server
+W
+smooth_press
+Press:
+smooth_release
+Release:
+date3
+YYYY/MM/DD
+pitch
+Pitch:
+admin
+Admin
+others_garage
+Others
+brakes_garage
+Brakes
+geom_garage
+Geometry
+rakeangle_garage
+Rake Angle:
+swingarm_garage
+Swingarm Length:
+bike_selection
+My Bike
+category
+Category:
+category_server
+Cat
+race_number
+Race number:
+tearoff
+Tearoff
+bikeselection_title
+Bike Selection
+language
+Language
+enable_ff
+Enable
+wingesture
+Win Gesture
+complaint
+Complaint
+sit
+Sit
+direct_sit
+Direct
+notes
+Notes
+freelook
+Free Look
+freetrack
+FreeTrack
+disable_chat
+Disable Chat
+bandwidth
+Bandwidth:
+profile
+Profile
+share_setup
+Share Setup
+GG_Profiles
+Choose language and edit/rdefault profile to set name
+GG_Settings
+Adjust settings to match/rhardware and preferences
+GG_calibration
+All peripherals must be calibrated/rbefore it's possible to assign axis/rto controls
+leanleft
+Lean Left
+leanright
+Lean Right
+lookleft
+Look Left
+lookright
+Look Right
+cc_banned
+Banned
+leanriderbackward
+Lean Rider Backward
+leanriderforward
+Lean Rider Forward
+connected
+Connected...
+syncing
+Syncing...
+eject
+Eject
+input2_tab
+Input 2
+rider_lr_lean
+Rider L/R Lean
+cc_verylow
+Very Low
+cc_low
+Low
+cc_medium
+Medium
+cc_high
+High
+cc_veryhigh
+Very High
+cc_default
+Default
+cc_overall
+Overall
+cc_waiting
+Waiting
+cc_prequalify
+Pre-Qualify
+cc_qualify
+Qualify
+cc_warmup
+Warmup
+cc_race1
+Race1
+cc_race2
+Race2
+CC_wrongcategory
+Wrong Category
+CC_racestarted
+Race Already Started
+CC_pitlanefull
+Pitlane Full
+cc_startinggrid
+Starting Grid
+cc_entries
+Entries
+cc_analysis
+Analysis
+cc_fastestlap
+Fastest Lap
+cc_practice
+Practice
+cc_classification
+Classification
+cc_penalties
+Penalties
+offence_stand
+Offence
+penalty_stand
+Penalty
+laps_stand
+Laps
+cc_clear
+Clear
+cc_cloudy
+Cloudy
+cc_Rainy
+Rainy
+cc_north
+North
+cc_northeast
+Northeast
+cc_east
+East
+cc_southeast
+Southeast
+cc_south
+South
+cc_southwest
+Southwest
+cc_west
+West
+cc_northwest
+Northwest
+cc_minute
+min
+cc_airtemp
+Air Temp
+rating_class
+Rating Class:
+cc_wrongrating
+Wrong Rating
+cc_connected
+connected
+cc_ejected
+Ejected
+cc_disconnected
+Disconnected
+3d_grass
+3D Grass
+direct_lean
+Direct Lean:
+rating_server
+R
+cc_laps
+laps
+cc_unabletoidentifyuser
+Unable to Identify User
+cc_bilinear
+Bilinear
+cc_trilinear
+Trilinear
+CC_SightingLap
+Sighting Lap
+cc_prestart
+Pre-Start
+cc_raceover
+Race Over
+cc_startsequence
+Start Sequence
+cc_inprogress
+In Progress
+cc_complete
+Complete
+cc_cutting
+Cutting
+cc_jumpstart
+Jump Start
+cc_retired
+Retired
+cc_serverdisco
+Server Disconnection
+cc_disqualified
+Disqualified
+cc_director
+Director
+cc_timepenalty
+Time Penalty
+angrygesture
+Angry Gesture
+GG_bikeselect
+Change current bike and set paints
+GG_viewer
+L mouse button: rotate/rR mouse button: pan/rL+R mouse buttons: dolly in / out/rSpace: hide / show interface
+GG_world
+Access online matchmaking
+cc_lap
+lap
+cc_sharedsetup
+shared setup
+Connection
+Connection
+shifthelp
+Shift Help
+starter
+Starter
+show_hud
+Show HUD
+CC_PollEject
+Poll: Eject
+CC_PollKick
+Poll: Kick
+CC_PollStartSession
+Poll: Start
+CC_PollDisqualify
+Poll: Disqualify
+CC_Yes
+Yes
+CC_No
+No
+CC_PollResults
+Poll Results
+CC_PollApproved
+Approved
+CC_PollRejected
+Rejected
+hide_names
+Hide Names
+track_settings
+Track
+max_ping
+Max Ping:
+host_local
+Host Local
+host_world
+Host World
+cc_dry
+Dry
+cc_wet
+Wet
+autoclutch
+Automatic Clutch
+autotyreschange
+Automatic Tyres Change
+limitedtyresets
+Limited Tyre Sets
+tyre_sets
+Tyre Sets:
+mapping_garage
+Mapping:
+engine_garage
+Engine
+leanriderleft
+Lean Rider Left
+leanriderright
+Lean Rider Right
+lowspeedback
+Push Bike Backward
+lowspeedforw
+Push Bike Forward
+votehelp
+F2: Yes / F4: No
+gearbox
+Gearbox
+pressure_tires
+Pressure
+autoriderlrlean
+Automatic Rider L/R Lean
+help_replay
+?
+GG_replayhelp
+Space: hide / show interface/rTab: hide / show the classification/rCtrl + Tab: hide / show the telemetry/rNumpad /: hide / show names/rRoll + Rotate Left, Right: roll Orbit / Free camera/rDouble Roll: reset Orbit / Free camera roll/rDecimal: cycle between Free camera modes/rNumpad 5: play/rNumpad 0: pause/rNumpad 7: rewind to the start/rNumpad 1: fast forward to the end/rNumpad 9: rewind/rNumpad 3: fast forward/rNumpad 4: rewind one frame/rNumpad 6: advance one frame/rNumpad 8: rewind slow-motion/rNumpad 2: slow-motion/rRight Alt + Subtract: previous camera/rRight Alt + Add: next camera/rRight Alt + Numpad 1 to Numpad 0: directly select camera from 1 to 10/rRight Shift + Subtract: previous rider on track/rRight Shift + Add: next rider on track/rRight Shift + Numpad 1 to Numpad 0: directly select rider from 1 to 10/r1 to 4 to switch camera / rider range to 11 - 50/r0 to go back to 1 - 10
+viewer
+Viewer
+GG_lean
+Click on this column to assign the controls
+TT_cutstart
+Set / remove Cut Start
+TT_cutend
+Set / remove Cut End
+TT_live
+Live feed
+TT_rewindstart
+Rewind to the start
+TT_ffend
+Fast forward to the end
+TT_rewind
+Rewind. Every successive press increases rewind rate
+TT_rewindslow
+Slow-motion rewind. Every successive press decreases rewind rate
+TT_rewindframe
+Rewind one frame
+TT_playpause
+Play / pause
+TT_advanceframe
+Advance one frame
+TT_slowmotion
+Slow-motion. Every successive press decreases advance rate
+TT_fastforward
+Fast forward. Every successive press increases advance rate
+TT_savereplay
+Save replay. The range can be limited using the "Cut Start" and "Cut End" buttons
+TT_browser
+D = dedicated server/rP = password protected/rComp = competitors/rCat = category/rH = hardcore mode. A: no aids; C: force cockpit; T: limited tyre sets; +: all/rW = weather. None: realistic; S: sunny; C: cloudy; R: rainy/rR = rating
+TT_smooth
+Smooths out the input adding a delay./rIt is useful for digital inputs and for gamepads
+TT_linearity
+100 means linear, direct, control./rMoving this slider toward non-linear gives more precision in the first part of the input, at the expense of the second part./rIt is useful for digital inputs and gamepads
+TT_deadzone
+Deadzone filters unwanted movements in the first part of the input./rIt is useful for analog inputs.
+uk_units
+UK
+nickname_title
+Nickname
+reverse_ff
+Reverse
+guid
+GUID:
+trainer
+Trainer
+enable_trainer
+Enable
+add_trainer
+Add
+save_trainer
+Save
+remove_trainer
+Remove
+face_tracking
+Face Tracking
+cc_notwhitelisted
+Not Whitelisted
+trainer_overwrite
+Overwrite Trainer?
+cc_blacklisted
+Blacklisted
+CC_PollInProgress
+A poll is in progress
+CC_PollWait
+Wait before starting a new poll
+CC_PollsDisabled
+Polls are disabled
+oil_garage
+Oil:
+CC_MaxPingWarning
+Max Ping Warning
+helmet
+Helmet:
+helmet_paint
+Helmet Paint:
+save_replay
+Save Replay
+export_results
+Export Results
+setup_notes
+Setup Notes
+save_setup
+Save Setup
+shared_setups
+Shared
+export_setup
+Export Setup
+setup_shared
+Setup
+sender
+Sender
+shared_setups_title
+Shared Setups
+copy_from
+Copy From
+track_copyfrom
+Track
+setup_copyfrom
+Setup
+preload_gearbox
+Preload
+shiftuppreload
+Shift Up Preload
+shiftdownpreload
+Shift Down Preload
+trainer_save
+Save Trainer
+trainer_add
+Add Trainer
+front_leverage
+Front Leverage:
+front_disc
+Front Disc:
+rear_mastercylinder
+Rear Master Cylinder:
+rear_disc
+Rear Disc:
+riding_style
+Riding Style:
+input3_tab
+Input 3
+ReplayMoveLeft
+Move Left
+ReplayMoveRight
+Move Right
+ReplayMoveForward
+Move Forward
+ReplayMoveBackward
+Move Backward
+ReplayMoveUp
+Move Up
+ReplayMoveDown
+Move Down
+ReplayRotLeft
+Rotate Left
+ReplayRotRight
+Rotate Right
+ReplayRotUp
+Rotate Up
+ReplayRotDown
+Rotate Down
+camera_controls
+Replay Camera
+ReplayRoll
+Roll
+ReplayFovOpen
+Fov Open
+ReplayFovClose
+Fov Close
+ReplaySpeedInc
+Speed Increase
+ReplaySpeedDec
+Speed Decrease
+gestures
+Gestures
+front_sag
+Front Sag:
+race_sag
+Race Sag
+static_sag
+Static Sag
+test_garage
+Test
+info
+Info
+rear_sag
+Rear Sag:
+rider_gear
+Rider Gear:
+category_title
+Category
+rider_name
+Rider Name:
+rider_font
+Rider Font:
+boots_paint
+Boots Paint:
+gloves_paint
+Gloves Paint:
+protection
+Protection:
+bikeinfo_title
+Bike Info
+gain
+Gain:
+Displacement_info
+Displacement:
+gears_info
+Gears:
+engine_info
+Engine:
+maxpower_info
+Max Power:
+weight_info
+Weight:
+select_gate
+Select Gate
+gateselection_tittle
+Gate Selection
+race2_length
+Race2 Length:
+sightinglap_info
+Sighting Lap:
+prequalify_length
+Pre-Qualify Length:
+race1_length
+Race1 Length:
+help_track
+Help:
+password_title
+Password
+server
+Server:
+laps_race
+Laps
+looktoapex
+Look To Apex
+leanheading
+Lean Heading
+photo
+Photo
+ideal_lap_time
+Ideal Lap Time:
+cc_ideallaptime
+Ideal Lap Time
+ideal_time
+Ideal Time
+best_time
+Best Time
+bike_font
+Bike Font:
+dab
+Dab
+cc_autocamset
+Auto
+cc_orbitcam
+Orbit
+cc_freecam
+Free
+cc_freeroamcam
+Free-Roam
+autoriderdab
+Automatic Rider Dab
+GG_photo
+L mouse button: rotate/rR mouse button: pan/rL+R mouse buttons: dolly in / out/rSpace: hide / show interface
+GG_calibrationinfo
+Move all analog axes of all controllers to their full extent/rThen leave them in neutral position and press OK
+joystick
+Joystick
+axle_calibration
+Axle
+controller_calibration
+Controller:
+value_calibration
+Value
+min_calibration
+Min
+max_calibration
+Max
+lean_help
+Lean Help
+reset_track
+Reset Track
+disable_collisions
+Disable Collisions
+collisions
+Collisions
+collisions_disabled
+Collisions Disabled:
+fork_offset
+Fork Offset:
+clean_bike
+Clean
+controller_profile
+Controller Profile:
+cc_custom
+Custom
+compare_setup
+Compare:
+vsync
+VSync
+trackmarker
+Track Marker
+cc_trackmarkerset
+Track Marker Set
+show_rider_stand
+Show Rider Stand
+trackir
+TrackIR
+info_server
+Info
+server_info
+Server Info
+system
+System
+vr_reset
+VR Reset
+tip_1
+Keep the "Reset" control pressed for 3 seconds to reset the bike to track
+tip_2
+Keep the "Track Marker" control pressed for a second to set it, tap the control to reset the bike to it
+tip_3
+The keys from 1 to 0 are bound to the autochat messages
+tip_4
+The F5 key shows / hides the chat history on track
+tip_5
+Shift + C cycles between the onboard view position adjustments. Use the up and down arrow keys to move the view; left and right keys pressed together to reset it
+boots
+Boots:
+goggles_paint
+Goggles Paint:
+open_practice
+Open Practice
+open_practice_title
+Open Practice
+autoridersit
+Automatic Rider Sit
+lead_trainer
+Lead:
+cc_sec
+sec
+helmet_cam
+Helmet Cam:
+combined_brakes
+Combined Brakes
+rider_tracking
+Rider Lean Tracking:
+slowcompression_garage
+Low Speed Compression:
+fastcompression_garage
+High Speed Compression:
+cc_click
+click
+cc_clicks
+clicks
+cc_turn
+turn
+cc_turns
+turns
+min_combinedbrakes
+Min:
+max_combinedbrakes
+Max:
+cc_fuel
+Fuel:
+cc_battery
+Battery:
+spectate
+Spectate
+cc_spectating
+spectating
+cc_joined
+joined
+cc_resettracknotclear
+Track Not Clear
+cc_resetbikenotstopped
+Bike Not Stopped
+straight_rhythm_title
+Straight Rhythm
+cc_bikemismatch
+Bike Mismatch
+cc_missingbike
+Missing Bike
+data_mismatch
+Data Mismatch
+GG_reset
+Keep the "Reset" control pressed for/r3 seconds to reset the bike to track
+CC_RunOver
+Run Over
+run_time
+Run Time
+ideal_run_time
+Ideal Run Time:
+TT_forkbump
+Affects how quickly the fork compresses. More clicks = softer (quicker)
+TT_forkrebound
+Affects how quickly the fork extends. More clicks = softer (quicker)
+TT_preload
+Increase preload to stiffen the suspension and reduce sag
+TT_shockbump
+Affects how quickly the suspension compresses. More clicks = softer (quicker)
+TT_shockrebound
+Affects how quickly the suspension extends. More clicks = softer (quicker)
+TT_shockfastbump
+Affects how quickly the suspension compresses on hard landings. More turns = softer (quicker)
+TT_forkoil
+Decreasing the fork oil measurement increases the spring stiffness in the last part of fork travel
+missing_track
+Missing Track
+CC_runs
+Runs
+CC_races
+Races
+practice_max_runs
+Practice Max Runs:
+straight_rhythm_testing_title
+Straight Rhythm Testing
+CC_LaneCrossing
+Lane Crossing
+vs
+vs.
+CC_Round
+Round
+CC_QuarterFinals
+Quarter-finals
+CC_SemiFinals
+Semi-finals
+CC_Final
+Final
+CC_Run
+Run
+run_stand
+Run
+straight_rhythm
+Straight Rhythm
+CC_ResetTrack
+Reset Track
+CC_PollSpectators
+Spectators cannot start this kind of poll
+CC_PollRaces
+Polls disabled during races
+rumble
+Rumble
+lock_view
+Lock To Bike
+local
+Local
+TT_ridertracking
+Links the rider lean to the view tracking ( VR, TrackIR, ... ) position/rWarning! It disables manual control of rider lean
+holeshot
+Holeshot:
+instant_replay
+Instant Replay
+cc_racelength_percentage
+Percentage
+cc_racelength_time
+Time
+cc_racelength_laps
+Laps
+rodlength_garage
+Rod Length:
+fork_height
+Fork Height:
+protection_paint
+Protection Paint:
+qualify_practice
+Qualify Practice
+qualifypractice_length
+Qualify Practice Length:
+TT_forkoffset
+Triple Clamps Offset/rA higher value makes the bike more agile, a lower one more stable
+jump_tosession
+Jump to Session:
+jump_toround
+Jump to Round:
+jump_torun
+Jump to Run:
+trick
+Trick
+cc_qualifypractice
+Qualify Practice
+CC_lastlap
+Last Lap
+CC_finish
+Finish
+jump_tolap
+Jump to Lap:
+jump_tocontact
+Jump to Contact:
+missing_bikes
+Missing Bikes
+filter_empty_servers
+Hide Empty
+filter_servers_missingcontent
+Hide Missing Contents
+CC_SyncTrackData
+Track Data
+CC_SyncDynamicTrackSurfaceData
+Dynamic Track Surface Data
+CC_SyncTerrainDeformationData
+Terrain Deformation Data
+CC_SyncRaceData
+Race Data
+CC_SyncInit
+Init
+CC_SyncBikeData
+Bike Data
+CC_SyncTyreData
+Tyre Data
+CC_SyncCachingBike
+Caching Bike:
+CC_SyncCachingTempBike
+Caching Temporary Bike:
+CC_SyncCachingRider
+Caching Rider:
+CC_SyncCachingAnimation
+Caching Riding Style:
+CC_SyncCachingBoots
+Caching Boots:
+CC_SyncCachingHelmet
+Caching Helmet:
+CC_SyncCachingStand
+Caching Stand
+CC_SyncTrackGraphics
+Track Graphics
+CC_SyncMisc
+Misc
+CC_SyncBikeGraphics
+Bike Graphics
+CC_SyncClientConnection
+Client Connection
+CC_SyncClientData
+Client Data
+CC_SyncClientSpectatorJoin
+Client Spectator Join
+CC_SyncClientEjected
+Client Ejected
+CC_SyncClientDisconnected
+Client Disconnected
+CC_SyncData
+Data
+CC_SyncCommunication
+Communication
+TT_guidcopy
+Copy GUID to clipboard
+pit_environment_sounds
+Pit Environment Sounds
+filter_name
+Filter Name:
+cc_disabled
+Disabled
+cc_full
+Full
+cc_fblean
+F/B Lean
+cc_lrlean
+L/R Lean
+cc_trackmismatch
+Track Mismatch
+flags
+Flags:
+cc_both
+Both
+pits
+Pits:
+CC_banadmin
+By Admin
+CC_banpoll
+By Poll
+CC_banping
+Ping Too High
+track_screens
+Track Screens
+externalview
+External View
+dynamic_view
+Dynamic
+remotebikes_volume
+Remote Bikes Volume:
+follow_bike
+Follow Bike
+terrain_detail
+Terrain Detail:
+distance_extview
+Distance:
+lateral_offset
+Lateral Offset:
+brakes_volume
+Brakes Volume:
+height
+Height:
+cc_tyresmismatch
+Tyres Mismatch
+cc_ridermismatch
+Rider Mismatch
+corrupted_paints
+Corrupted Paints
+error_sign
+!
+reset_delay
+Reset Delay:
+deformation_terrain
+Deformation:
+cc_none
+None
+cc_fixed
+Fixed
+cc_distance
+Distance
+cc_crashspeed
+Crash Speed
+ui_back
+UI Back
+ui_hide
+UI Hide / Show
+ui_enter
+UI Enter
+kick
+Kick
+CC_bancheat
+Cheating
+common_setup
+Common
+polls_disabled
+Polls Disabled
+chat_disabled
+Chat Disabled
+CC_limitedtyresets
+Limited
+CC_freetyresets
+Free
+error
+Error
+cc_tracknotallowed
+Track Not Allowed
+cc_dropped
+Dropped
+cc_cancelled
+Cancelled
+tyres_selection
+Tyres:
+CC_SyncCachingBikePhysics
+Caching Bike Physics:
+CC_SyncCachingClassPhysics
+Caching Class Physics:
+CC_SyncCachingTyres
+Caching Tyres:
+cc_missingtyres
+Missing Tyres
+cc_classmismatch
+Class Mismatch
+cc_missingclass
+Missing Class
+class
+Class:
+overjump_crash
+Overjump Crash

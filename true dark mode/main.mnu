@@ -1,0 +1,529 @@
+
+dialog
+{
+	name main_menu
+	item_darkbox
+	{
+		name ID_DARKBOX
+		rect 0.000000 0.200000 0.243750 0.866667
+		color 127 0 0 0
+	}
+	item_button
+	{
+		name id_testing
+		button
+		{
+			rect 0.000000 0.311111 0.243750 0.355556
+			sprite2 main2.tga
+			sprite3 main3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Testing
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.044444
+			align center
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name id_settings
+		guide GG_Settings
+		button
+		{
+			rect 0.000000 0.711111 0.243750 0.755556
+			sprite2 main2.tga
+			sprite3 main3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid settings
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.044444
+			align center
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name id_exit
+		button
+		{
+			rect 0.000000 0.788889 0.243750 0.833333
+			sprite2 mainexit2.tga
+			sprite3 mainexit3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Exit
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.044444
+			align center
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name id_viewreplays
+		button
+		{
+			rect 0.000000 0.577778 0.243750 0.622222
+			sprite2 main2.tga
+			sprite3 main3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Viewreplays
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.044444
+			align center
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name id_profiles
+		guide GG_Profiles
+		button
+		{
+			rect 0.000000 0.500000 0.243750 0.544444
+			sprite2 main2.tga
+			sprite3 main3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid profiles
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.044444
+			align center
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name ID_MULTIPLAYER
+		button
+		{
+			rect 0.000000 0.366667 0.243750 0.411111
+			sprite2 main2.tga
+			sprite3 main3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Single_race
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.044444
+			align center
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name ID_HOME
+		button
+		{
+			rect 0.000000 0.833333 0.018750 0.866667
+			sprite1 b_home1.tga
+			sprite2 b_home2.tga
+			sprite3 b_home3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			pos 0.000000 0.000000
+			fontsize 0.000000
+			align left
+		}
+		color1 255 255 255 255
+		color2 255 0 255 255
+		color3 0 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.000000 0.200000 0.243750 0.308889
+		sprite logo_ui.tga
+	}
+	item_button
+	{
+		name ID_BESTLAPS
+		button
+		{
+			rect 0.000000 0.633333 0.243750 0.677778
+			sprite2 main2.tga
+			sprite3 main3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Bestlaps
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.044444
+			align center
+		}
+		color1 255 255 255 255
+		color2 255 255 255 255
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_BIKE
+		button
+		{
+			rect 0.000000 0.444444 0.243750 0.488889
+			sprite2 main2.tga
+			sprite3 main3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid bike_selection
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.044444
+			align center
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name ID_ERROR
+		button
+		{
+			rect 0.018750 0.833333 0.037500 0.866667
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid error_sign
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 190 190 190
+		color2 255 230 230 230
+		color3 255 40 60 240
+	}
+}
+
+dialog
+{
+	name exit_confirm
+	item_darkbox
+	{
+		name idc_darkbox1
+		rect 0.000000 0.000000 1.000000 1.000000
+		color 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.312500 0.388889 0.687500 0.611111
+		sprite dialog600x200.tga
+	}
+	item_darkbox
+	{
+		name ID_DARKBOX1
+		rect 0.318750 0.566667 0.681250 0.600000
+		color 127 0 0 0
+	}
+	item_button
+	{
+		name id_no
+		button
+		{
+			rect 0.581250 0.566667 0.681250 0.600000
+			sprite2 b_button2.tga
+			sprite3 b_button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid no
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name id_yes
+		button
+		{
+			rect 0.318750 0.566667 0.418750 0.600000
+			sprite2 b_button2.tga
+			sprite3 b_button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid yes
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.318750 0.400000 0.681250 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		textid exit_confirm
+		color 255 208 208 208
+		backcolor 0 0 0 0
+	}
+}
+
+dialog
+{
+	name IDD_SPLASH
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.000000 0.000000 1.000000 1.000000
+		sprite splash.tga
+	}
+}
+
+dialog
+{
+	name idd_home
+	item_bitmap
+	{
+		name ID_PLACEHOLDER
+		rect 0.468750 0.444444 0.531250 0.555556
+	}
+}
+
+dialog
+{
+	name idd_viewer
+	item_bitmap
+	{
+		name ID_BACKGROUND
+		rect 0.000000 0.000000 1.000000 1.000000
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.000000 0.000000 1.000000 0.088889
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.022222
+			fontsize 0.066667
+			align right
+		}
+		textid viewer
+		color 255 240 240 240
+		backcolor 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.006250 0.000000 0.206250 0.088889
+		sprite logo_ui.tga
+	}
+	item_darkbox
+	{
+		name ID_DARKBOX
+		rect 0.000000 0.966667 1.000000 1.000000
+		color 127 0 0 0
+	}
+	item_button
+	{
+		name id_back
+		button
+		{
+			rect 0.000000 0.966667 0.100000 1.000000
+			sprite2 back1.tga
+			sprite3 back2.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Back
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_bitmap
+	{
+		name ID_GUIDE
+		guide GG_viewer
+		rect 0.468750 0.444444 0.531250 0.555556
+	}
+}
+
+dialog
+{
+	name idd_background
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.000000 0.000000 1.000000 1.000000
+		sprite bkgrnd.tga
+	}
+}
+
+dialog
+{
+	name idd_corruptedpaints
+	item_darkbox
+	{
+		name ID_DARKBOX
+		rect 0.000000 0.000000 1.000000 1.000000
+		color 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP2
+		rect 0.250000 0.222222 0.750000 0.777778
+		sprite dialog800x500.tga
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.256250 0.233333 0.743750 0.255556
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		textid corrupted_paints
+		color 255 208 208 208
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_CLOSE
+		button
+		{
+			rect 0.437500 0.733333 0.562500 0.766667
+			sprite1 button1.tga
+			sprite2 button2.tga
+			sprite3 button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid close
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_list
+	{
+		name ID_LIST
+		list
+		{
+			rect 0.256250 0.266667 0.743750 0.711111
+			spacing 0.022222
+			numcolumns 3
+			columnsize0 0.125000
+			columnsize1 0.156250
+			columnsize2 0.206250
+			selectable 0
+			text
+			{
+				font main.fnt
+				pos 0.001250 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 255
+			color3 255 0 255 255
+			backcolor 255 37 37 37
+			sortbar 0
+			sortbarheight 0.000000
+			sortbartext
+			{
+				pos 0.000000 0.000000
+				fontsize 0.000000
+				align left
+			}
+			sortbartextcolor 0 0 0 0
+			sortbartextcolor2 0 0 0 0
+			sortbartextcolor3 0 0 0 0
+			sortbackcolor 0 0 0 0
+			sort 0
+		}
+		slider
+		{
+			rect 0.731250 0.266667 0.743750 0.711111
+			size 0.022222
+		}
+		sliderwidth 0.012500
+	}
+}
+

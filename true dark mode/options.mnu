@@ -1,0 +1,6795 @@
+
+dialog
+{
+	name idd_options
+	item_darkbox
+	{
+		name ID_DARKBOX1
+		rect 0.000000 0.966667 1.000000 1.000000
+		color 127 0 0 0
+	}
+	item_tab
+	{
+		name id_input_tab
+		group 0
+		rect 0.006250 0.911111 0.131250 0.944444
+		sprite1 tabh1.tga
+		sprite2 tabh2.tga
+		sample2 ui_tab.wav
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid input_tab
+		color1 255 208 208 208
+		color2 255 0 0 0
+	}
+	item_tab
+	{
+		name id_gfx_tab
+		group 0
+		rect 0.381250 0.911111 0.506250 0.944444
+		sprite1 tabh1.tga
+		sprite2 tabh2.tga
+		sample2 ui_tab.wav
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid gfx_tab
+		color1 255 208 208 208
+		color2 255 0 0 0
+	}
+	item_tab
+	{
+		name id_misc_tab
+		group 0
+		rect 0.506250 0.911111 0.631250 0.944444
+		sprite1 tabh1.tga
+		sprite2 tabh2.tga
+		sample2 ui_tab.wav
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid misc_tab
+		color1 255 208 208 208
+		color2 255 0 0 0
+	}
+	item_button
+	{
+		name id_back
+		button
+		{
+			rect 0.000000 0.966667 0.100000 1.000000
+			sprite2 back1.tga
+			sprite3 back2.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Back
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name id_done
+		button
+		{
+			rect 0.875000 0.966667 1.000000 1.000000
+			sprite2 done1.tga
+			sprite3 done2.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Done
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_tab
+	{
+		name id_others_tab
+		group 0
+		rect 0.631250 0.911111 0.756250 0.944444
+		sprite1 tabh1.tga
+		sprite2 tabh2.tga
+		sample2 ui_tab.wav
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid simulation
+		color1 255 208 208 208
+		color2 255 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.000000 0.000000 1.000000 0.088889
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.022222
+			fontsize 0.066667
+			align right
+		}
+		textid settings
+		color 255 240 240 240
+		backcolor 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.006250 0.000000 0.206250 0.088889
+		sprite logo_ui.tga
+	}
+	item_tab
+	{
+		name ID_INPUT2_TAB
+		group 0
+		rect 0.131250 0.911111 0.256250 0.944444
+		sprite1 tabh1.tga
+		sprite2 tabh2.tga
+		sample2 ui_tab.wav
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid input2_tab
+		color1 255 208 208 208
+		color2 255 0 0 0
+	}
+	item_tab
+	{
+		name ID_INPUT3_TAB
+		group 0
+		rect 0.256250 0.911111 0.381250 0.944444
+		sprite1 tabh1.tga
+		sprite2 tabh2.tga
+		sample2 ui_tab.wav
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid input3_tab
+		color1 255 208 208 208
+		color2 255 0 0 0
+	}
+}
+
+dialog
+{
+	name IDD_options_confirm
+	item_darkbox
+	{
+		name id_darkbox
+		rect 0.000000 0.000000 1.000000 1.000000
+		color 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.312500 0.388889 0.687500 0.611111
+		sprite dialog600x200.tga
+	}
+	item_darkbox
+	{
+		name ID_DARKBOX2
+		rect 0.318750 0.566667 0.681250 0.600000
+		color 127 0 0 0
+	}
+	item_text
+	{
+		name idc_text1
+		rect 0.318750 0.400000 0.681250 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		textid options_confirm
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_yes
+		button
+		{
+			rect 0.318750 0.566667 0.418750 0.600000
+			sprite2 button2.tga
+			sprite3 button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid yes
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name id_no
+		button
+		{
+			rect 0.581250 0.566667 0.681250 0.600000
+			sprite2 button2.tga
+			sprite3 button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid no
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+}
+
+dialog
+{
+	name idd_graphic_options
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.006250 0.133333 0.993750 0.911111
+		sprite dialog1580x700t.tga
+	}
+	item_text
+	{
+		name id_resolutiontext
+		rect 0.012500 0.177778 0.137500 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid resolution
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_spin
+	{
+		name id_resolution
+		rect 0.137500 0.177778 0.262500 0.200000
+		spin
+		{
+			buttonssize 0.012500
+			type 0
+			button1
+			{
+				rect 0.137500 0.177778 0.150000 0.200000
+				sprite1 arrow_lf1.tga
+				sprite2 arrow_lf2.tga
+				sprite3 arrow_lf3.tga
+			}
+			button2
+			{
+				rect 0.150000 0.177778 0.162500 0.200000
+				sprite1 arrow_rg1.tga
+				sprite2 arrow_rg2.tga
+				sprite3 arrow_rg3.tga
+			}
+		}
+		text
+		{
+			font main.fnt
+			pos 0.028125 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name id_bpptext
+		rect 0.012500 0.244444 0.137500 0.266667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid bpp
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_spin
+	{
+		name id_bpp
+		rect 0.137500 0.244444 0.262500 0.266667
+		spin
+		{
+			buttonssize 0.012500
+			type 0
+			button1
+			{
+				rect 0.137500 0.244444 0.150000 0.266667
+				sprite1 arrow_lf1.tga
+				sprite2 arrow_lf2.tga
+				sprite3 arrow_lf3.tga
+			}
+			button2
+			{
+				rect 0.150000 0.244444 0.162500 0.266667
+				sprite1 arrow_rg1.tga
+				sprite2 arrow_rg2.tga
+				sprite3 arrow_rg3.tga
+			}
+		}
+		text
+		{
+			font main.fnt
+			pos 0.028125 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name id_refresh_text
+		rect 0.012500 0.277778 0.137500 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid refreshrate
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_spin
+	{
+		name id_frequency
+		rect 0.137500 0.277778 0.262500 0.300000
+		spin
+		{
+			buttonssize 0.012500
+			type 0
+			button1
+			{
+				rect 0.137500 0.277778 0.150000 0.300000
+				sprite1 arrow_lf1.tga
+				sprite2 arrow_lf2.tga
+				sprite3 arrow_lf3.tga
+			}
+			button2
+			{
+				rect 0.150000 0.277778 0.162500 0.300000
+				sprite1 arrow_rg1.tga
+				sprite2 arrow_rg2.tga
+				sprite3 arrow_rg3.tga
+			}
+		}
+		text
+		{
+			font main.fnt
+			pos 0.028125 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+	}
+	item_pull
+	{
+		name id_fullscreen
+		rect 0.012500 0.211111 0.137500 0.233333
+		text
+		{
+			font main.fnt
+			pos 0.003125 0.001111
+			fontsize 0.020000
+			align left
+		}
+		noselection 0
+		search 0
+		textcolor 255 163 163 163
+		backcolor 255 37 37 37
+		spacing 0.022222
+		visiblerows 10
+		pullbackcolor 200 0 0 0
+		pulltextcolor1 255 163 163 163
+		pulltextcolor2 255 208 208 208
+		switchsize 0.012500
+		sprite1 switch1.tga
+		sprite2 switch2.tga
+		sample ui_pullswitch.wav
+	}
+	item_checkbox
+	{
+		name id_bikesshadow
+		rect 0.506250 0.177778 0.631250 0.200000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid dynamicshadows
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name id_bikesreflection
+		rect 0.506250 0.211111 0.631250 0.233333
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid Reflections
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name id_shaders
+		rect 0.506250 0.244444 0.631250 0.266667
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid Shaders
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name id_texturesize_text
+		rect 0.012500 0.488889 0.137500 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid size_texture
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_texturesize_label
+		rect 0.137500 0.488889 0.262500 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_texturesize
+		slider
+		{
+			rect 0.018750 0.522222 0.206250 0.544444
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.522222 0.031250 0.544444
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.522222 0.206250 0.544444
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name id_texturefilter_text
+		rect 0.012500 0.555556 0.137500 0.577778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid filtering
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_spin
+	{
+		name id_texturefilter
+		rect 0.137500 0.555556 0.262500 0.577778
+		spin
+		{
+			buttonssize 0.012500
+			type 0
+			button1
+			{
+				rect 0.137500 0.555556 0.150000 0.577778
+				sprite1 arrow_lf1.tga
+				sprite2 arrow_lf2.tga
+				sprite3 arrow_lf3.tga
+			}
+			button2
+			{
+				rect 0.150000 0.555556 0.162500 0.577778
+				sprite1 arrow_rg1.tga
+				sprite2 arrow_rg2.tga
+				sprite3 arrow_rg3.tga
+			}
+		}
+		text
+		{
+			font main.fnt
+			pos 0.028125 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+	}
+	item_slider
+	{
+		name id_drawdist
+		slider
+		{
+			rect 0.512500 0.355556 0.700000 0.377778
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.512500 0.355556 0.525000 0.377778
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.687500 0.355556 0.700000 0.377778
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_slider
+	{
+		name id_detailbias
+		slider
+		{
+			rect 0.512500 0.422222 0.700000 0.444444
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.512500 0.422222 0.525000 0.444444
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.687500 0.422222 0.700000 0.444444
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name id_aniso_text
+		rect 0.012500 0.588889 0.137500 0.611111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid aniso_text
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_aniso_label
+		rect 0.137500 0.588889 0.262500 0.611111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_aniso
+		slider
+		{
+			rect 0.018750 0.622222 0.206250 0.644444
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.622222 0.031250 0.644444
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.622222 0.206250 0.644444
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name id_screentext
+		rect 0.012500 0.144444 0.493750 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid screen
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name id_texturestext
+		rect 0.012500 0.455556 0.493750 0.477778
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid Textures
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name id_lightingtext
+		rect 0.506250 0.144444 0.987500 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid lighting
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name id_drawdist_text
+		rect 0.506250 0.322222 0.631250 0.344444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid drawdist_text
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_detailbias_label
+		rect 0.631250 0.388889 0.693750 0.411111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_detailbias_text
+		rect 0.506250 0.388889 0.631250 0.411111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid models_detail
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_drawdist_label
+		rect 0.631250 0.322222 0.693750 0.344444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_detaillevelstext
+		rect 0.506250 0.288889 0.987500 0.311111
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid detaillevels
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_slider
+	{
+		name ID_ANTIALIAS
+		slider
+		{
+			rect 0.018750 0.377778 0.206250 0.400000
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.377778 0.031250 0.400000
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.377778 0.206250 0.400000
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_ANTIALIAS_TEXT
+		rect 0.012500 0.344444 0.137500 0.366667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid antialias
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_ANTIALIAS_LABEL
+		rect 0.137500 0.344444 0.200000 0.366667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_pull
+	{
+		name ID_SCREENRATIO
+		rect 0.137500 0.411111 0.262500 0.433333
+		text
+		{
+			font main.fnt
+			pos 0.003125 0.001111
+			fontsize 0.020000
+			align left
+		}
+		noselection 0
+		search 0
+		textcolor 255 163 163 163
+		backcolor 255 37 37 37
+		spacing 0.022222
+		visiblerows 10
+		pullbackcolor 200 0 0 0
+		pulltextcolor1 255 163 163 163
+		pulltextcolor2 255 208 208 208
+		switchsize 0.012500
+		sprite1 switch1.tga
+		sprite2 switch2.tga
+		sample ui_pullswitch.wav
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.012500 0.411111 0.137500 0.433333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid Screenratio
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_checkbox
+	{
+		name ID_3DGRASS
+		rect 0.506250 0.522222 0.631250 0.544444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid 3d_grass
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_VSYNC
+		rect 0.012500 0.311111 0.137500 0.333333
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid vsync
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_CURRESOLUTION
+		rect 0.262500 0.177778 0.387500 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_checkbox
+	{
+		name ID_TRACKSCREENS
+		rect 0.506250 0.555556 0.631250 0.577778
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid track_screens
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT1
+		rect 0.506250 0.455556 0.631250 0.477778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid terrain_detail
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_terraindetailbias_label
+		rect 0.631250 0.455556 0.693750 0.477778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_terraindetailbias
+		slider
+		{
+			rect 0.512500 0.488889 0.700000 0.511111
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.512500 0.488889 0.525000 0.511111
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.687500 0.488889 0.700000 0.511111
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+}
+
+dialog
+{
+	name idd_wait_control
+	item_darkbox
+	{
+		name idc_darkbox1
+		rect 0.000000 0.000000 1.000000 1.000000
+		color 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.312500 0.388889 0.687500 0.611111
+		sprite dialog600x200.tga
+	}
+	item_text
+	{
+		name id_title
+		rect 0.318750 0.400000 0.681250 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_control
+		rect 0.318750 0.433333 0.681250 0.455556
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_CANCEL
+		button
+		{
+			rect 0.437500 0.566667 0.562500 0.600000
+			sprite1 button1.tga
+			sprite2 button2.tga
+			sprite3 button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid cancel
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+}
+
+dialog
+{
+	name idd_calibration
+	item_darkbox
+	{
+		name idc_darkbox1
+		rect 0.000000 0.000000 1.000000 1.000000
+		color 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.250000 0.200000 0.750000 0.755556
+		sprite dialog800x500.tga
+	}
+	item_pull
+	{
+		name id_joystick
+		rect 0.381250 0.211111 0.631250 0.233333
+		text
+		{
+			font main.fnt
+			pos 0.003125 0.001111
+			fontsize 0.020000
+			align left
+		}
+		noselection 0
+		search 0
+		textcolor 255 163 163 163
+		backcolor 255 37 37 37
+		spacing 0.022222
+		visiblerows 10
+		pullbackcolor 200 0 0 0
+		pulltextcolor1 255 163 163 163
+		pulltextcolor2 255 208 208 208
+		switchsize 0.012500
+		sprite1 switch1.tga
+		sprite2 switch2.tga
+		sample ui_pullswitch.wav
+		spin
+		{
+			buttonssize 0.012500
+			type 0
+			button1
+			{
+				rect 0.381250 0.211111 0.393750 0.233333
+				sprite1 arrow_lf1.tga
+				sprite2 arrow_lf2.tga
+				sprite3 arrow_lf3.tga
+			}
+			button2
+			{
+				rect 0.393750 0.211111 0.406250 0.233333
+				sprite1 arrow_rg1.tga
+				sprite2 arrow_rg2.tga
+				sprite3 arrow_rg3.tga
+			}
+		}
+	}
+	item_text
+	{
+		name id_axis1_name
+		rect 0.256250 0.311111 0.318750 0.333333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis1_raw
+		rect 0.343750 0.311111 0.406250 0.333333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis1_min
+		rect 0.418750 0.311111 0.481250 0.333333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_axis1
+		slider
+		{
+			rect 0.487500 0.311111 0.675000 0.322222
+			size 0.006250
+			sprite1 c_box.tga
+			sample ui_slider.wav
+		}
+		readonly 1
+	}
+	item_text
+	{
+		name id_axis1_max
+		rect 0.681250 0.311111 0.743750 0.333333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis2_name
+		rect 0.256250 0.355556 0.318750 0.377778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis2_raw
+		rect 0.343750 0.355556 0.406250 0.377778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis2_min
+		rect 0.418750 0.355556 0.481250 0.377778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_axis2
+		slider
+		{
+			rect 0.487500 0.355556 0.675000 0.366667
+			size 0.006250
+			sprite1 c_box.tga
+			sample ui_slider.wav
+		}
+		readonly 1
+	}
+	item_text
+	{
+		name id_axis2_max
+		rect 0.681250 0.355556 0.743750 0.377778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis3_name
+		rect 0.256250 0.400000 0.318750 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis3_raw
+		rect 0.343750 0.400000 0.406250 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis3_min
+		rect 0.418750 0.400000 0.481250 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_axis3
+		slider
+		{
+			rect 0.487500 0.400000 0.675000 0.411111
+			size 0.006250
+			sprite1 c_box.tga
+			sample ui_slider.wav
+		}
+		readonly 1
+	}
+	item_text
+	{
+		name id_axis3_max
+		rect 0.681250 0.400000 0.743750 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis4_name
+		rect 0.256250 0.444444 0.318750 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis4_raw
+		rect 0.343750 0.444444 0.406250 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis4_min
+		rect 0.418750 0.444444 0.481250 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_axis4
+		slider
+		{
+			rect 0.487500 0.444444 0.675000 0.455556
+			size 0.006250
+			sprite1 c_box.tga
+			sample ui_slider.wav
+		}
+		readonly 1
+	}
+	item_text
+	{
+		name id_axis4_max
+		rect 0.681250 0.444444 0.743750 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis5_name
+		rect 0.256250 0.488889 0.318750 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis5_raw
+		rect 0.343750 0.488889 0.406250 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis5_min
+		rect 0.418750 0.488889 0.481250 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_axis5
+		slider
+		{
+			rect 0.487500 0.488889 0.675000 0.500000
+			size 0.006250
+			sprite1 c_box.tga
+			sample ui_slider.wav
+		}
+		readonly 1
+	}
+	item_text
+	{
+		name id_axis5_max
+		rect 0.681250 0.488889 0.743750 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis6_name
+		rect 0.256250 0.533333 0.318750 0.555556
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis6_raw
+		rect 0.343750 0.533333 0.406250 0.555556
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis6_min
+		rect 0.418750 0.533333 0.481250 0.555556
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_axis6
+		slider
+		{
+			rect 0.487500 0.533333 0.675000 0.544444
+			size 0.006250
+			sprite1 c_box.tga
+			sample ui_slider.wav
+		}
+		readonly 1
+	}
+	item_text
+	{
+		name id_axis6_max
+		rect 0.681250 0.533333 0.743750 0.555556
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis7_name
+		rect 0.256250 0.577778 0.318750 0.600000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis7_raw
+		rect 0.343750 0.577778 0.406250 0.600000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis7_min
+		rect 0.418750 0.577778 0.481250 0.600000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_axis7
+		slider
+		{
+			rect 0.487500 0.577778 0.675000 0.588889
+			size 0.006250
+			sprite1 c_box.tga
+			sample ui_slider.wav
+		}
+		readonly 1
+	}
+	item_text
+	{
+		name id_axis7_max
+		rect 0.681250 0.577778 0.743750 0.600000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis8_name
+		rect 0.256250 0.622222 0.318750 0.644444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis8_raw
+		rect 0.343750 0.622222 0.406250 0.644444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_axis8_min
+		rect 0.418750 0.622222 0.481250 0.644444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_axis8
+		slider
+		{
+			rect 0.487500 0.622222 0.675000 0.633333
+			size 0.006250
+			sprite1 c_box.tga
+			sample ui_slider.wav
+		}
+		readonly 1
+	}
+	item_text
+	{
+		name id_axis8_max
+		rect 0.681250 0.622222 0.743750 0.644444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_darkbox
+	{
+		name ID_DARKBOX
+		rect 0.256250 0.711111 0.743750 0.744444
+		color 127 0 0 0
+	}
+	item_button
+	{
+		name id_ok
+		guide GG_calibrationinfo
+		button
+		{
+			rect 0.256250 0.711111 0.356250 0.744444
+			sprite2 b_button2.tga
+			sprite3 b_button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid ok
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.256250 0.211111 0.381250 0.233333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid controller_calibration
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT1
+		rect 0.256250 0.277778 0.318750 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid axle_calibration
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT2
+		rect 0.343750 0.277778 0.406250 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid value_calibration
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT3
+		rect 0.418750 0.277778 0.481250 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align right
+		}
+		textid min_calibration
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT4
+		rect 0.681250 0.277778 0.743750 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid max_calibration
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_CANCEL
+		button
+		{
+			rect 0.643750 0.711111 0.743750 0.744444
+			sprite2 b_button2.tga
+			sprite3 b_button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid cancel
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+}
+
+dialog
+{
+	name idd_input_options
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.006250 0.133333 0.993750 0.911111
+		sprite dialog1580x700t.tga
+	}
+	item_text
+	{
+		name id_controlstext
+		rect 0.012500 0.244444 0.493750 0.266667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid controls
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name id_leanlabel
+		rect 0.012500 0.277778 0.137500 0.311111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid Lean
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_lean
+		guide GG_lean
+		button
+		{
+			rect 0.137500 0.277778 0.387500 0.311111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_throttlelabel
+		rect 0.012500 0.311111 0.137500 0.344444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid Throttle
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_throttle
+		button
+		{
+			rect 0.137500 0.311111 0.387500 0.344444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_brakelabel
+		rect 0.012500 0.344444 0.137500 0.377778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid Brake
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_brake
+		button
+		{
+			rect 0.137500 0.344444 0.387500 0.377778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_rearbrakelabel
+		rect 0.012500 0.377778 0.137500 0.411111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid RearBrake
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_rearbrake
+		button
+		{
+			rect 0.137500 0.377778 0.387500 0.411111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_clutchlabel
+		rect 0.012500 0.411111 0.137500 0.444444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid clutch
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_clutch
+		button
+		{
+			rect 0.137500 0.411111 0.387500 0.444444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_FBLEANLABEL
+		rect 0.012500 0.444444 0.137500 0.477778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid rider_fb_lean
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_FBLEAN
+		button
+		{
+			rect 0.137500 0.444444 0.387500 0.477778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name id_calibration
+		guide GG_calibration
+		button
+		{
+			rect 0.012500 0.188889 0.137500 0.222222
+			sprite1 button1.tga
+			sprite2 button2.tga
+			sprite3 button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid Calibration
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_text
+	{
+		name ID_TEXT6
+		rect 0.506250 0.588889 0.987500 0.611111
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid Forcefeedback
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_FFENABLE
+		rect 0.506250 0.622222 0.631250 0.644444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid enable_ff
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT7
+		rect 0.506250 0.655556 0.631250 0.677778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid ffstrength
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_FFSTRENGTH_LABEL
+		rect 0.631250 0.655556 0.693750 0.677778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_FFSTRENGTH
+		slider
+		{
+			rect 0.512500 0.688889 0.700000 0.711111
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.512500 0.688889 0.525000 0.711111
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.687500 0.688889 0.700000 0.711111
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.506250 0.144444 0.987500 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid advanced_input
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_checkbox
+	{
+		name id_smooth
+		tooltip TT_smooth
+		rect 0.512500 0.344444 0.637500 0.366667
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid smooth
+		color 255 163 163 163
+	}
+	item_pull
+	{
+		name ID_CURCONTROL
+		rect 0.506250 0.177778 0.631250 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.003125 0.001111
+			fontsize 0.020000
+			align left
+		}
+		noselection 0
+		search 0
+		textcolor 255 163 163 163
+		backcolor 255 37 37 37
+		spacing 0.022222
+		visiblerows 10
+		pullbackcolor 200 0 0 0
+		pulltextcolor1 255 163 163 163
+		pulltextcolor2 255 208 208 208
+		switchsize 0.012500
+		sprite1 switch1.tga
+		sprite2 switch2.tga
+		sample ui_pullswitch.wav
+	}
+	item_slider
+	{
+		name ID_DEADZONE
+		tooltip TT_deadzone
+		slider
+		{
+			rect 0.518750 0.244444 0.706250 0.266667
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.518750 0.244444 0.531250 0.266667
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.693750 0.244444 0.706250 0.266667
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_slider
+	{
+		name ID_LINEARITY
+		tooltip TT_linearity
+		slider
+		{
+			rect 0.518750 0.311111 0.706250 0.333333
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.518750 0.311111 0.531250 0.333333
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.693750 0.311111 0.706250 0.333333
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_TEXT1
+		rect 0.512500 0.211111 0.637500 0.233333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid deadzone
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT2
+		rect 0.512500 0.277778 0.637500 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid linearity
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_DEADZONE_LABEL
+		rect 0.637500 0.211111 0.700000 0.233333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_LINEARITY_LABEL
+		rect 0.637500 0.277778 0.700000 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT3
+		rect 0.518750 0.377778 0.643750 0.400000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid smooth_press
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_SMOOTHPRESS
+		slider
+		{
+			rect 0.525000 0.411111 0.712500 0.433333
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.525000 0.411111 0.537500 0.433333
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.700000 0.411111 0.712500 0.433333
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_SMOOTHPRESS_LABEL
+		rect 0.643750 0.377778 0.706250 0.400000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT4
+		rect 0.518750 0.444444 0.643750 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid smooth_release
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_SMOOTHRELEASE
+		slider
+		{
+			rect 0.525000 0.477778 0.712500 0.500000
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.525000 0.477778 0.537500 0.500000
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.700000 0.477778 0.712500 0.500000
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_SMOOTHRELEASE_LABEL
+		rect 0.643750 0.444444 0.706250 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_CONTROLS
+		rect 0.506250 0.788889 0.568750 0.900000
+	}
+	item_button
+	{
+		name ID_LRLEAN
+		button
+		{
+			rect 0.137500 0.477778 0.387500 0.511111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT5
+		rect 0.012500 0.477778 0.137500 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid rider_lr_lean
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_DIRECTLEAN_LABEL
+		rect 0.137500 0.555556 0.200000 0.577778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_checkbox
+	{
+		name ID_FFREVERSE
+		rect 0.506250 0.722222 0.631250 0.744444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid reverse_ff
+		color 255 163 163 163
+	}
+	item_slider
+	{
+		name ID_GAIN
+		slider
+		{
+			rect 0.518750 0.544444 0.706250 0.566667
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.518750 0.544444 0.531250 0.566667
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.693750 0.544444 0.706250 0.566667
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_GAIN_LABEL
+		rect 0.637500 0.511111 0.700000 0.533333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT9
+		rect 0.512500 0.511111 0.637500 0.533333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid gain
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT10
+		rect 0.012500 0.555556 0.137500 0.577778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid direct_lean
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_DIRECTLEAN
+		slider
+		{
+			rect 0.018750 0.588889 0.206250 0.611111
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.588889 0.031250 0.611111
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.588889 0.206250 0.611111
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_pull
+	{
+		name ID_CONTROLLERPROFILE
+		rect 0.137500 0.144444 0.262500 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.003125 0.001111
+			fontsize 0.020000
+			align left
+		}
+		noselection 0
+		search 0
+		textcolor 255 163 163 163
+		backcolor 255 37 37 37
+		spacing 0.022222
+		visiblerows 10
+		pullbackcolor 200 0 0 0
+		pulltextcolor1 255 163 163 163
+		pulltextcolor2 255 208 208 208
+		switchsize 0.012500
+		sprite1 switch1.tga
+		sprite2 switch2.tga
+		sample ui_pullswitch.wav
+	}
+	item_text
+	{
+		name ID_TEXT8
+		rect 0.012500 0.144444 0.137500 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid controller_profile
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_checkbox
+	{
+		name ID_COMBINEDBRAKES
+		rect 0.012500 0.622222 0.137500 0.644444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid combined_brakes
+		color 255 163 163 163
+	}
+	item_slider
+	{
+		name ID_COMBINEDBRAKES_MIN
+		slider
+		{
+			rect 0.025000 0.688889 0.212500 0.711111
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.025000 0.688889 0.037500 0.711111
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.200000 0.688889 0.212500 0.711111
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_COMBINEDBRAKES_MIN_LABEL
+		rect 0.143750 0.655556 0.206250 0.677778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT11
+		rect 0.018750 0.655556 0.143750 0.677778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid min_combinedbrakes
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_COMBINEDBRAKES_MAX
+		slider
+		{
+			rect 0.025000 0.755556 0.212500 0.777778
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.025000 0.755556 0.037500 0.777778
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.200000 0.755556 0.212500 0.777778
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_COMBINEDBRAKES_MAX_LABEL
+		rect 0.143750 0.722222 0.206250 0.744444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT12
+		rect 0.018750 0.722222 0.143750 0.744444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid max_combinedbrakes
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT13
+		rect 0.012500 0.522222 0.168750 0.544444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid rider_tracking
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_checkbox
+	{
+		name ID_RUMBLE
+		rect 0.506250 0.755556 0.631250 0.777778
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid rumble
+		color 255 163 163 163
+	}
+	item_pull
+	{
+		name ID_RIDERTRACKING
+		rect 0.168750 0.522222 0.293750 0.544444
+		text
+		{
+			font main.fnt
+			pos 0.003125 0.001111
+			fontsize 0.020000
+			align left
+		}
+		noselection 0
+		search 0
+		textcolor 255 163 163 163
+		backcolor 255 37 37 37
+		spacing 0.022222
+		visiblerows 10
+		pullbackcolor 200 0 0 0
+		pulltextcolor1 255 163 163 163
+		pulltextcolor2 255 208 208 208
+		switchsize 0.012500
+		sprite1 switch1.tga
+		sprite2 switch2.tga
+		sample ui_pullswitch.wav
+	}
+}
+
+dialog
+{
+	name idd_input2_options
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.006250 0.133333 0.993750 0.911111
+		sprite dialog1580x700t.tga
+	}
+	item_text
+	{
+		name id_controlstext
+		rect 0.012500 0.144444 0.493750 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid gearbox
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name id_shiftuplabel
+		rect 0.012500 0.211111 0.137500 0.244444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid Shiftup
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_shiftup
+		button
+		{
+			rect 0.137500 0.211111 0.387500 0.244444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_shiftdownlabel
+		rect 0.012500 0.244444 0.137500 0.277778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid Shiftdown
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_shiftdown
+		button
+		{
+			rect 0.137500 0.244444 0.387500 0.277778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_RESETLABEL
+		rect 0.012500 0.533333 0.137500 0.566667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid reset
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_RESET
+		button
+		{
+			rect 0.137500 0.533333 0.387500 0.566667
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_changeviewlabel
+		rect 0.506250 0.177778 0.631250 0.211111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid changeview
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_changeview
+		button
+		{
+			rect 0.631250 0.177778 0.881250 0.211111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_lookbacklabel
+		rect 0.506250 0.211111 0.631250 0.244444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid lookback
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_lookback
+		button
+		{
+			rect 0.631250 0.211111 0.881250 0.244444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_headinglabel
+		rect 0.506250 0.244444 0.631250 0.277778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid heading
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_heading
+		button
+		{
+			rect 0.631250 0.244444 0.881250 0.277778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name id_chatlabel
+		rect 0.506250 0.511111 0.631250 0.544444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid chat
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_chat
+		button
+		{
+			rect 0.631250 0.511111 0.881250 0.544444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_LOWSPEED
+		button
+		{
+			rect 0.137500 0.377778 0.387500 0.411111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_lowspeedtext
+		rect 0.012500 0.377778 0.137500 0.411111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid lowspeed
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_TEAROFF
+		button
+		{
+			rect 0.631250 0.277778 0.881250 0.311111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT5
+		rect 0.506250 0.277778 0.631250 0.311111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid tearoff
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_SIT
+		button
+		{
+			rect 0.137500 0.411111 0.387500 0.444444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_RAISEARM
+		button
+		{
+			rect 0.631250 0.366667 0.881250 0.400000
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_COMPLAINT
+		button
+		{
+			rect 0.631250 0.400000 0.881250 0.433333
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_WINGESTURE
+		button
+		{
+			rect 0.631250 0.433333 0.881250 0.466667
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.506250 0.366667 0.631250 0.400000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid raisearm
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT1
+		rect 0.506250 0.400000 0.631250 0.433333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid complaint
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT2
+		rect 0.506250 0.433333 0.631250 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid wingesture
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT3
+		rect 0.012500 0.411111 0.137500 0.444444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid sit
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT6
+		rect 0.506250 0.466667 0.631250 0.500000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid angrygesture
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_ANGRYGESTURE
+		button
+		{
+			rect 0.631250 0.466667 0.881250 0.500000
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 45 45 180
+	}
+	item_text
+	{
+		name ID_TEXT7
+		rect 0.012500 0.300000 0.493750 0.322222
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid controls
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_PRELOAD
+		rect 0.012500 0.177778 0.137500 0.200000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid preload_gearbox
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT9
+		rect 0.506250 0.333333 0.987500 0.355556
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid gestures
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT10
+		rect 0.506250 0.144444 0.987500 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid view
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_SITDIRECT
+		rect 0.018750 0.455556 0.143750 0.477778
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid direct_sit
+		color 255 163 163 163
+	}
+	item_button
+	{
+		name ID_STARTER
+		button
+		{
+			rect 0.137500 0.333333 0.387500 0.366667
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 45 45 180
+	}
+	item_text
+	{
+		name ID_TEXT7
+		rect 0.012500 0.333333 0.137500 0.366667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid starter
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_DAB
+		button
+		{
+			rect 0.137500 0.488889 0.387500 0.522222
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT4
+		rect 0.012500 0.488889 0.137500 0.522222
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid dab
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_TRACKMARKER
+		button
+		{
+			rect 0.137500 0.566667 0.387500 0.600000
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.006667
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TRACKMARKERLABEL
+		rect 0.012500 0.566667 0.137500 0.600000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid trackmarker
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_TRICK
+		button
+		{
+			rect 0.631250 0.555556 0.881250 0.588889
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT8
+		rect 0.506250 0.555556 0.631250 0.588889
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid trick
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_SHIFTUP_STATE
+		rect 0.387500 0.211111 0.393750 0.244444
+	}
+	item_bitmap
+	{
+		name ID_SHIFTDOWN_STATE
+		rect 0.387500 0.244444 0.393750 0.277778
+	}
+	item_bitmap
+	{
+		name ID_STARTER_STATE
+		rect 0.387500 0.333333 0.393750 0.366667
+	}
+	item_bitmap
+	{
+		name ID_LOWSPEED_STATE
+		rect 0.387500 0.377778 0.393750 0.411111
+	}
+	item_bitmap
+	{
+		name ID_SIT_STATE
+		rect 0.387500 0.411111 0.393750 0.444444
+	}
+	item_bitmap
+	{
+		name ID_DAB_STATE
+		rect 0.387500 0.488889 0.393750 0.522222
+	}
+	item_bitmap
+	{
+		name ID_RESET_STATE
+		rect 0.387500 0.533333 0.393750 0.566667
+	}
+	item_bitmap
+	{
+		name ID_TRACKMARKER_STATE
+		rect 0.387500 0.566667 0.393750 0.600000
+	}
+	item_bitmap
+	{
+		name ID_CHANGEVIEW_STATE
+		rect 0.881250 0.177778 0.887500 0.211111
+	}
+	item_bitmap
+	{
+		name ID_LOOKBACK_STATE
+		rect 0.881250 0.211111 0.887500 0.244444
+	}
+	item_bitmap
+	{
+		name ID_HEADING_STATE
+		rect 0.881250 0.244444 0.887500 0.277778
+	}
+	item_bitmap
+	{
+		name ID_TEAROFF_STATE
+		rect 0.881250 0.277778 0.887500 0.311111
+	}
+	item_bitmap
+	{
+		name ID_RAISEARM_STATE
+		rect 0.881250 0.366667 0.887500 0.400000
+	}
+	item_bitmap
+	{
+		name ID_COMPLAINT_STATE
+		rect 0.881250 0.400000 0.887500 0.433333
+	}
+	item_bitmap
+	{
+		name ID_WINGESTURE_STATE
+		rect 0.881250 0.433333 0.887500 0.466667
+	}
+	item_bitmap
+	{
+		name ID_ANGRYGESTURE_STATE
+		rect 0.881250 0.466667 0.887500 0.500000
+	}
+	item_bitmap
+	{
+		name ID_CHAT_STATE
+		rect 0.881250 0.511111 0.887500 0.544444
+	}
+	item_bitmap
+	{
+		name ID_TRICK_STATE
+		rect 0.881250 0.555556 0.887500 0.588889
+	}
+}
+
+dialog
+{
+	name idd_misc_options
+	item_bitmap
+	{
+		name ID_BITMAP10
+		rect 0.006250 0.133333 0.993750 0.911111
+		sprite dialog1580x700t.tga
+	}
+	item_text
+	{
+		name id_uivolumetext
+		rect 0.012500 0.444444 0.168750 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid ui_volume
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_uivolume
+		slider
+		{
+			rect 0.018750 0.477778 0.206250 0.500000
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.477778 0.031250 0.500000
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.477778 0.206250 0.500000
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name id_soundtext
+		rect 0.012500 0.144444 0.493750 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid Audio
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name id_mastervolumetext
+		rect 0.012500 0.177778 0.168750 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid volume_text
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_mastervolume
+		slider
+		{
+			rect 0.018750 0.211111 0.206250 0.233333
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.211111 0.031250 0.233333
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.211111 0.206250 0.233333
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name id_multitext
+		rect 0.506250 0.144444 0.987500 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid Connection
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name id_multiconntext
+		rect 0.506250 0.177778 0.631250 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid bandwidth
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_spin
+	{
+		name id_conn_type
+		rect 0.631250 0.177778 0.756250 0.200000
+		spin
+		{
+			buttonssize 0.012500
+			type 0
+			button1
+			{
+				rect 0.631250 0.177778 0.643750 0.200000
+				sprite1 arrow_lf1.tga
+				sprite2 arrow_lf2.tga
+				sprite3 arrow_lf3.tga
+			}
+			button2
+			{
+				rect 0.643750 0.177778 0.656250 0.200000
+				sprite1 arrow_rg1.tga
+				sprite2 arrow_rg2.tga
+				sprite3 arrow_rg3.tga
+			}
+		}
+		text
+		{
+			font main.fnt
+			pos 0.028125 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name id_unitstext
+		rect 0.012500 0.555556 0.493750 0.577778
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid Units
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_radio
+	{
+		name id_unitsmetric
+		group 0
+		rect 0.012500 0.588889 0.137500 0.611111
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid metric_units
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name id_unitsus
+		group 0
+		rect 0.012500 0.622222 0.137500 0.644444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid us_units
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name id_datetext
+		rect 0.012500 0.700000 0.493750 0.722222
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid dateformat
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_radio
+	{
+		name id_date1
+		group 1
+		rect 0.012500 0.733333 0.137500 0.755556
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid date1
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name id_date2
+		group 1
+		rect 0.012500 0.766667 0.137500 0.788889
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid date2
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name id_autochattext
+		rect 0.506250 0.222222 0.987500 0.244444
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid autochat
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_editbox
+	{
+		name id_autochat1
+		rect 0.525000 0.255556 0.650000 0.277778
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat2
+		rect 0.525000 0.288889 0.650000 0.311111
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat3
+		rect 0.525000 0.322222 0.650000 0.344444
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat4
+		rect 0.525000 0.355556 0.650000 0.377778
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat5
+		rect 0.525000 0.388889 0.650000 0.411111
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat6
+		rect 0.525000 0.422222 0.650000 0.444444
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat7
+		rect 0.525000 0.455556 0.650000 0.477778
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat8
+		rect 0.525000 0.488889 0.650000 0.511111
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat9
+		rect 0.525000 0.522222 0.650000 0.544444
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_editbox
+	{
+		name id_autochat10
+		rect 0.525000 0.555556 0.650000 0.577778
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 0 0 0
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.506250 0.255556 0.518750 0.277778
+		sprite autochat1.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP1
+		rect 0.506250 0.288889 0.518750 0.311111
+		sprite autochat2.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP2
+		rect 0.506250 0.322222 0.518750 0.344444
+		sprite autochat3.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP3
+		rect 0.506250 0.355556 0.518750 0.377778
+		sprite autochat4.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP4
+		rect 0.506250 0.388889 0.518750 0.411111
+		sprite autochat5.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP5
+		rect 0.506250 0.422222 0.518750 0.444444
+		sprite autochat6.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP6
+		rect 0.506250 0.455556 0.518750 0.477778
+		sprite autochat7.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP7
+		rect 0.506250 0.488889 0.518750 0.511111
+		sprite autochat8.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP8
+		rect 0.506250 0.522222 0.518750 0.544444
+		sprite autochat9.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP9
+		rect 0.506250 0.555556 0.518750 0.577778
+		sprite autochat0.tga
+	}
+	item_text
+	{
+		name ID_MASTERVOLUMELABEL
+		rect 0.168750 0.177778 0.231250 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_UIVOLUMELABEL
+		rect 0.168750 0.444444 0.231250 0.466667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_aerovolumetext
+		rect 0.012500 0.311111 0.168750 0.333333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid aero_volume
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_aerovolumelabel
+		rect 0.168750 0.311111 0.231250 0.333333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_aerovolume
+		slider
+		{
+			rect 0.018750 0.344444 0.206250 0.366667
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.344444 0.031250 0.366667
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.344444 0.206250 0.366667
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.012500 0.844444 0.493750 0.866667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid userinterface
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_SKIPINTRO
+		rect 0.012500 0.877778 0.137500 0.900000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid skipintro
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name ID_DATE3
+		group 1
+		rect 0.012500 0.800000 0.137500 0.822222
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid date3
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_DRIVINGCHAT
+		rect 0.506250 0.666667 0.631250 0.688889
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid disable_chat
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT3
+		rect 0.506250 0.700000 0.631250 0.722222
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid flags
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT1
+		rect 0.506250 0.600000 0.987500 0.622222
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid track_settings
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_HIDENAMES
+		rect 0.506250 0.733333 0.631250 0.755556
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid hide_names
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name ID_UNITSUK
+		group 0
+		rect 0.012500 0.655556 0.137500 0.677778
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid uk_units
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT2
+		rect 0.506250 0.633333 0.631250 0.655556
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid help_track
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_spin
+	{
+		name ID_TRACKHELP
+		rect 0.631250 0.633333 0.756250 0.655556
+		spin
+		{
+			buttonssize 0.012500
+			type 0
+			button1
+			{
+				rect 0.631250 0.633333 0.643750 0.655556
+				sprite1 arrow_lf1.tga
+				sprite2 arrow_lf2.tga
+				sprite3 arrow_lf3.tga
+			}
+			button2
+			{
+				rect 0.643750 0.633333 0.656250 0.655556
+				sprite1 arrow_rg1.tga
+				sprite2 arrow_rg2.tga
+				sprite3 arrow_rg3.tga
+			}
+		}
+		text
+		{
+			font main.fnt
+			pos 0.028125 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 208 208 208
+	}
+	item_checkbox
+	{
+		name ID_PITENVIRONMENTSOUNDS
+		rect 0.012500 0.511111 0.168750 0.533333
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid pit_environment_sounds
+		color 255 163 163 163
+	}
+	item_pull
+	{
+		name ID_FLAGS
+		rect 0.631250 0.700000 0.756250 0.722222
+		text
+		{
+			font main.fnt
+			pos 0.003125 0.001111
+			fontsize 0.020000
+			align left
+		}
+		noselection 0
+		search 0
+		textcolor 255 163 163 163
+		backcolor 255 37 37 37
+		spacing 0.022222
+		visiblerows 10
+		pullbackcolor 200 0 0 0
+		pulltextcolor1 255 163 163 163
+		pulltextcolor2 255 208 208 208
+		switchsize 0.012500
+		sprite1 switch1.tga
+		sprite2 switch2.tga
+		sample ui_pullswitch.wav
+	}
+	item_text
+	{
+		name id_remotebikesvolumetext
+		rect 0.012500 0.377778 0.168750 0.400000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid remotebikes_volume
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_remotebikesvolumelabel
+		rect 0.168750 0.377778 0.231250 0.400000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_remotebikesvolume
+		slider
+		{
+			rect 0.018750 0.411111 0.206250 0.433333
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.411111 0.031250 0.433333
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.411111 0.206250 0.433333
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name id_brakesvolumetext
+		rect 0.012500 0.244444 0.168750 0.266667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid brakes_volume
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_brakesvolumelabel
+		rect 0.168750 0.244444 0.231250 0.266667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_brakesvolume
+		slider
+		{
+			rect 0.018750 0.277778 0.206250 0.300000
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.277778 0.031250 0.300000
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.277778 0.206250 0.300000
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+}
+
+dialog
+{
+	name idd_switch
+	item_darkbox
+	{
+		name ID_DARKBOX2
+		rect 0.000000 0.000000 1.000000 1.000000
+		color 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.312500 0.388889 0.687500 0.611111
+		sprite dialog600x200.tga
+	}
+	item_darkbox
+	{
+		name ID_DARKBOX1
+		rect 0.318750 0.566667 0.681250 0.600000
+		color 127 0 0 0
+	}
+	item_button
+	{
+		name id_yes
+		button
+		{
+			rect 0.318750 0.566667 0.418750 0.600000
+			sprite2 b_button2.tga
+			sprite3 b_button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid yes
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_button
+	{
+		name id_no
+		button
+		{
+			rect 0.581250 0.566667 0.681250 0.600000
+			sprite2 b_button2.tga
+			sprite3 b_button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid no
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_text
+	{
+		name id_text
+		rect 0.318750 0.400000 0.681250 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		textid keep_resolution
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_MESSAGE
+		rect 0.318750 0.433333 0.681250 0.455556
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+}
+
+dialog
+{
+	name idd_others_options
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.006250 0.133333 0.993750 0.911111
+		sprite dialog1580x700t.tga
+	}
+	item_text
+	{
+		name id_drivingviewtext
+		rect 0.012500 0.144444 0.493750 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid onboardview
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name id_fovtext
+		rect 0.012500 0.177778 0.168750 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid fov
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name id_fov_label
+		rect 0.168750 0.177778 0.231250 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name id_fov
+		slider
+		{
+			rect 0.018750 0.211111 0.206250 0.233333
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.211111 0.031250 0.233333
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.211111 0.206250 0.233333
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_checkbox
+	{
+		name id_corneranticipation
+		rect 0.012500 0.577778 0.200000 0.600000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid corneranticipation
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name id_freelook
+		rect 0.012500 0.377778 0.137500 0.400000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid freelook
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name ID_TRACKING
+		group 0
+		rect 0.025000 0.444444 0.150000 0.466667
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid freetrack
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name ID_MOUSELOOK
+		group 0
+		rect 0.025000 0.511111 0.150000 0.533333
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid mouselook
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name id_tractionhelp
+		rect 0.506250 0.655556 0.693750 0.677778
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid tractionhelp
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name id_brakehelp
+		rect 0.506250 0.688889 0.693750 0.711111
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid brakehelp
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name id_autoshift
+		rect 0.506250 0.555556 0.693750 0.577778
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid autoshift
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name id_aids_text
+		rect 0.506250 0.488889 0.987500 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid ridingaids
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_slider
+	{
+		name ID_TILT
+		slider
+		{
+			rect 0.018750 0.277778 0.206250 0.300000
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.277778 0.031250 0.300000
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.277778 0.206250 0.300000
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_TEXT1
+		rect 0.012500 0.244444 0.168750 0.266667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid tilt
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TILT_LABEL
+		rect 0.168750 0.244444 0.231250 0.266667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_PITCH
+		slider
+		{
+			rect 0.018750 0.344444 0.206250 0.366667
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.018750 0.344444 0.031250 0.366667
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.193750 0.344444 0.206250 0.366667
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.012500 0.311111 0.168750 0.333333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid pitch
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_PITCH_LABEL
+		rect 0.168750 0.311111 0.231250 0.333333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_checkbox
+	{
+		name ID_SHIFTHELP
+		rect 0.506250 0.588889 0.693750 0.611111
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid shifthelp
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_AUTOCLUTCH
+		rect 0.506250 0.622222 0.693750 0.644444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid autoclutch
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_AUTOTYRESCHANGE
+		rect 0.506250 0.855556 0.693750 0.877778
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid autotyreschange
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_AUTORIDERLRLEAN
+		rect 0.506250 0.755556 0.693750 0.777778
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid autoriderlrlean
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name ID_FACETRACKING
+		group 0
+		rect 0.025000 0.477778 0.150000 0.500000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid face_tracking
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name ID_LOOKTOAPEX
+		group 1
+		rect 0.018750 0.611111 0.143750 0.633333
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid looktoapex
+		color 255 163 163 163
+	}
+	item_slider
+	{
+		name ID_CORNERANTICIPATIONSCALE
+		slider
+		{
+			rect 0.025000 0.644444 0.212500 0.666667
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.025000 0.644444 0.037500 0.666667
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.200000 0.644444 0.212500 0.666667
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_slider
+	{
+		name ID_LEANHEADINGSCALE
+		slider
+		{
+			rect 0.025000 0.711111 0.212500 0.733333
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.025000 0.711111 0.037500 0.733333
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.200000 0.711111 0.212500 0.733333
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_radio
+	{
+		name ID_LEANHEADING
+		group 1
+		rect 0.018750 0.677778 0.143750 0.700000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid leanheading
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_CORNERANTICIPATION_LABEL
+		rect 0.143750 0.611111 0.206250 0.633333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_LEANHEADING_LABEL
+		rect 0.143750 0.677778 0.206250 0.700000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_checkbox
+	{
+		name ID_SHOWHUD
+		rect 0.012500 0.777778 0.137500 0.800000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid show_hud
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_AUTORIDERDAB
+		rect 0.506250 0.788889 0.693750 0.811111
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid autoriderdab
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name ID_JOYSTICK
+		group 0
+		rect 0.025000 0.544444 0.150000 0.566667
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid joystick
+		color 255 163 163 163
+	}
+	item_radio
+	{
+		name ID_TRACKIR
+		group 0
+		rect 0.025000 0.411111 0.150000 0.433333
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 radio1.tga
+		sprite2 radio2.tga
+		sample2 ui_button_radiobox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid trackir
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_SHOWRIDERSTAND
+		rect 0.012500 0.811111 0.137500 0.833333
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid show_rider_stand
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_LEANHELP
+		rect 0.506250 0.522222 0.693750 0.544444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid lean_help
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_AUTORIDERSIT
+		rect 0.506250 0.822222 0.693750 0.844444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid autoridersit
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_FOV_EFFECTIVE
+		rect 0.231250 0.177778 0.293750 0.200000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_checkbox
+	{
+		name ID_AUTORIDERFBLEAN
+		rect 0.506250 0.722222 0.693750 0.744444
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid autoriderfblean
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_VIEWMODE
+		rect 0.012500 0.744444 0.168750 0.766667
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid lock_view
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT2
+		rect 0.506250 0.144444 0.987500 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid externalview
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_EXTVIEWMODE
+		rect 0.506250 0.177778 0.631250 0.200000
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid lock_view
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_EXTVIEWDYNAMIC
+		rect 0.506250 0.211111 0.631250 0.233333
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid dynamic_view
+		color 255 163 163 163
+	}
+	item_checkbox
+	{
+		name ID_EXTVIEWFOLLOWBIKE
+		rect 0.506250 0.244444 0.631250 0.266667
+		spriteposx 0.000000
+		spriteposy 0.000000
+		spritesizex 0.012500
+		spritesizey 0.022222
+		sprite1 check1.tga
+		sprite2 check2.tga
+		sample2 ui_checkbox.wav
+		text
+		{
+			font main.fnt
+			pos 0.015625 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid follow_bike
+		color 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT3
+		rect 0.506250 0.277778 0.631250 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid distance_extview
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_EXTVIEWDIST_LABEL
+		rect 0.631250 0.277778 0.693750 0.300000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_EXTVIEWDIST
+		slider
+		{
+			rect 0.512500 0.311111 0.700000 0.333333
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.512500 0.311111 0.525000 0.333333
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.687500 0.311111 0.700000 0.333333
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_TEXT4
+		rect 0.506250 0.411111 0.631250 0.433333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid lateral_offset
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_EXTVIEWLATOFF_LABEL
+		rect 0.631250 0.411111 0.693750 0.433333
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_EXTVIEWLATOFF
+		slider
+		{
+			rect 0.512500 0.444444 0.700000 0.466667
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.512500 0.444444 0.525000 0.466667
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.687500 0.444444 0.700000 0.466667
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+	item_text
+	{
+		name ID_TEXT5
+		rect 0.506250 0.344444 0.631250 0.366667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid height
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_EXTVIEWHEIGHT_LABEL
+		rect 0.631250 0.344444 0.693750 0.366667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_slider
+	{
+		name ID_EXTVIEWHEIGHT
+		slider
+		{
+			rect 0.512500 0.377778 0.700000 0.400000
+			size 0.012500
+			sprite1 slider_box.tga
+			sprite2 slider.tga
+			sample ui_slider.wav
+			buttonssize 0.012500
+			button0
+			{
+				rect 0.512500 0.377778 0.525000 0.400000
+				sprite1 slider_lf1.tga
+				sprite2 slider_lf2.tga
+				sprite3 slider_lf3.tga
+			}
+			button1
+			{
+				rect 0.687500 0.377778 0.700000 0.400000
+				sprite1 slider_rg1.tga
+				sprite2 slider_rg2.tga
+				sprite3 slider_rg3.tga
+			}
+		}
+		readonly 0
+	}
+}
+
+dialog
+{
+	name idd_input3_options
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.006250 0.133333 0.993750 0.911111
+		sprite dialog1580x700t.tga
+	}
+	item_button
+	{
+		name ID_REPLAYMOVELEFT
+		button
+		{
+			rect 0.137500 0.177778 0.387500 0.211111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.012500 0.177778 0.137500 0.211111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayMoveLeft
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT1
+		rect 0.012500 0.144444 0.493750 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid camera_controls
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_text
+	{
+		name ID_TEXT2
+		rect 0.012500 0.211111 0.137500 0.244444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayMoveRight
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_REPLAYMOVERIGHT
+		button
+		{
+			rect 0.137500 0.211111 0.387500 0.244444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYMOVEFORWARD
+		button
+		{
+			rect 0.137500 0.244444 0.387500 0.277778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYMOVEBACKWARD
+		button
+		{
+			rect 0.137500 0.277778 0.387500 0.311111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYROTLEFT
+		button
+		{
+			rect 0.137500 0.377778 0.387500 0.411111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYROTRIGHT
+		button
+		{
+			rect 0.137500 0.411111 0.387500 0.444444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYROLL
+		button
+		{
+			rect 0.137500 0.511111 0.387500 0.544444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYMOVEUP
+		button
+		{
+			rect 0.137500 0.311111 0.387500 0.344444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYMOVEDOWN
+		button
+		{
+			rect 0.137500 0.344444 0.387500 0.377778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYROTUP
+		button
+		{
+			rect 0.137500 0.444444 0.387500 0.477778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYROTDOWN
+		button
+		{
+			rect 0.137500 0.477778 0.387500 0.511111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYSPEEDINC
+		button
+		{
+			rect 0.137500 0.544444 0.387500 0.577778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYSPEEDDEC
+		button
+		{
+			rect 0.137500 0.577778 0.387500 0.611111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYFOVOPEN
+		button
+		{
+			rect 0.137500 0.611111 0.387500 0.644444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_REPLAYFOVCLOSE
+		button
+		{
+			rect 0.137500 0.644444 0.387500 0.677778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT3
+		rect 0.012500 0.244444 0.137500 0.277778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayMoveForward
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT4
+		rect 0.012500 0.511111 0.137500 0.544444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayRoll
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT5
+		rect 0.012500 0.277778 0.137500 0.311111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayMoveBackward
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT6
+		rect 0.012500 0.311111 0.137500 0.344444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayMoveUp
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT7
+		rect 0.012500 0.344444 0.137500 0.377778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayMoveDown
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT8
+		rect 0.012500 0.377778 0.137500 0.411111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayRotLeft
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT9
+		rect 0.012500 0.411111 0.137500 0.444444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayRotRight
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT10
+		rect 0.012500 0.611111 0.137500 0.644444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayFovOpen
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT11
+		rect 0.012500 0.644444 0.137500 0.677778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayFovClose
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT12
+		rect 0.012500 0.444444 0.137500 0.477778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayRotUp
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT13
+		rect 0.012500 0.477778 0.137500 0.511111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplayRotDown
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT14
+		rect 0.012500 0.544444 0.137500 0.577778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplaySpeedInc
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT15
+		rect 0.012500 0.577778 0.137500 0.611111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ReplaySpeedDec
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT16
+		rect 0.506250 0.144444 0.987500 0.166667
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid system
+		color 255 37 37 37
+		backcolor 255 163 163 163
+	}
+	item_button
+	{
+		name ID_VRRESET
+		button
+		{
+			rect 0.631250 0.333333 0.881250 0.366667
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT17
+		rect 0.506250 0.333333 0.631250 0.366667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid vr_reset
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_INSTANTREPLAY
+		button
+		{
+			rect 0.631250 0.288889 0.881250 0.322222
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT18
+		rect 0.506250 0.288889 0.631250 0.322222
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid instant_replay
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_UIBACK
+		button
+		{
+			rect 0.631250 0.177778 0.881250 0.211111
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_UIENTER
+		button
+		{
+			rect 0.631250 0.211111 0.881250 0.244444
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_button
+	{
+		name ID_UIHIDE
+		button
+		{
+			rect 0.631250 0.244444 0.881250 0.277778
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.005556
+			fontsize 0.022222
+			align center
+		}
+		color1 255 208 208 208
+		color2 255 0 0 0
+		color3 255 255 255 255
+	}
+	item_text
+	{
+		name ID_TEXT19
+		rect 0.506250 0.177778 0.631250 0.211111
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ui_back
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT20
+		rect 0.506250 0.211111 0.631250 0.244444
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ui_enter
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT21
+		rect 0.506250 0.244444 0.631250 0.277778
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		textid ui_hide
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_REPLAYMOVELEFT_STATE
+		rect 0.387500 0.177778 0.393750 0.211111
+	}
+	item_bitmap
+	{
+		name ID_REPLAYMOVERIGHT_STATE
+		rect 0.387500 0.211111 0.393750 0.244444
+	}
+	item_bitmap
+	{
+		name ID_REPLAYMOVEFORWARD_STATE
+		rect 0.387500 0.244444 0.393750 0.277778
+	}
+	item_bitmap
+	{
+		name ID_REPLAYMOVEBACKWARD_STATE
+		rect 0.387500 0.277778 0.393750 0.311111
+	}
+	item_bitmap
+	{
+		name ID_REPLAYMOVEUP_STATE
+		rect 0.387500 0.311111 0.393750 0.344444
+	}
+	item_bitmap
+	{
+		name ID_REPLAYMOVEDOWN_STATE
+		rect 0.387500 0.344444 0.393750 0.377778
+	}
+	item_bitmap
+	{
+		name ID_REPLAYROTLEFT_STATE
+		rect 0.387500 0.377778 0.393750 0.411111
+	}
+	item_bitmap
+	{
+		name ID_REPLAYROTRIGHT_STATE
+		rect 0.387500 0.411111 0.393750 0.444444
+	}
+	item_bitmap
+	{
+		name ID_REPLAYROTUP_STATE
+		rect 0.387500 0.444444 0.393750 0.477778
+	}
+	item_bitmap
+	{
+		name ID_REPLAYROTDOWN_STATE
+		rect 0.387500 0.477778 0.393750 0.511111
+	}
+	item_bitmap
+	{
+		name ID_REPLAYROLL_STATE
+		rect 0.387500 0.511111 0.393750 0.544444
+	}
+	item_bitmap
+	{
+		name ID_REPLAYSPEEDINC_STATE
+		rect 0.387500 0.544444 0.393750 0.577778
+	}
+	item_bitmap
+	{
+		name ID_REPLAYSPEEDDEC_STATE
+		rect 0.387500 0.577778 0.393750 0.611111
+	}
+	item_bitmap
+	{
+		name ID_REPLAYFOVOPEN_STATE
+		rect 0.387500 0.611111 0.393750 0.644444
+	}
+	item_bitmap
+	{
+		name ID_REPLAYFOVCLOSE_STATE
+		rect 0.387500 0.644444 0.393750 0.677778
+	}
+	item_bitmap
+	{
+		name ID_UIBACK_STATE
+		rect 0.881250 0.177778 0.887500 0.211111
+	}
+	item_bitmap
+	{
+		name ID_UIENTER_STATE
+		rect 0.881250 0.211111 0.887500 0.244444
+	}
+	item_bitmap
+	{
+		name ID_UIHIDE_STATE
+		rect 0.881250 0.244444 0.887500 0.277778
+	}
+	item_bitmap
+	{
+		name ID_INSTANTREPLAY_STATE
+		rect 0.881250 0.288889 0.887500 0.322222
+	}
+	item_bitmap
+	{
+		name ID_VRRESET_STATE
+		rect 0.881250 0.333333 0.887500 0.366667
+	}
+}
+

@@ -1,0 +1,57 @@
+
+ratio 16:9
+
+uidef
+{
+	addmenu main.mnu
+	addmenu testsetup.mnu
+	addmenu test.mnu
+	addmenu options.mnu
+	addmenu replay.mnu
+	addmenu viewreplays.mnu
+	addmenu connection.mnu
+	addmenu garage.mnu
+	addmenu profiles.mnu
+	addmenu multiclient.mnu
+	addmenu multijoin.mnu
+	addmenu hostsetup.mnu
+	addmenu export.mnu
+	addmenu testday.mnu
+	addmenu straightrhythm.mnu
+}
+
+pointer
+{
+	normal
+	{
+		sprite pointer.tga
+		shadow pointer_shadow.tga
+		sizex 0.022500
+		sizey 0.040000
+	}
+}
+
+tooltip
+{
+	font data.fnt
+	fontsize 0.020000
+	fontcolor 255 208 208 208
+	backcolor 255 37 37 37
+	bordercolor 255 208 208 208
+}
+
+guide
+{
+	font data.fnt
+	fontsize 0.020000
+	fontcolor 255 240 240 240
+	backcolor 255 10 10 60
+	bordercolor 255 240 240 240
+	arrow_tl guide_arrowtl.tga
+	arrow_tr guide_arrowtr.tga
+	arrow_bl guide_arrowbl.tga
+	arrow_br guide_arrowbr.tga
+}
+
+volume_attenuation 0.650000
+

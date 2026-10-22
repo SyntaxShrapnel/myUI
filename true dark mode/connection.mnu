@@ -1,0 +1,354 @@
+
+dialog
+{
+	name connection_dialog
+	item_bitmap
+	{
+		name id_sfondo
+		rect 0.000000 0.000000 1.000000 1.000000
+		sprite bkgrnd.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.312500 0.388889 0.687500 0.611111
+		sprite dialog600x200.tga
+	}
+	item_text
+	{
+		name id_message
+		rect 0.318750 0.400000 0.681250 0.422222
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		color 255 208 208 208
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name id_cancel
+		button
+		{
+			rect 0.437500 0.566667 0.562500 0.600000
+			sprite1 button1.tga
+			sprite2 button2.tga
+			sprite3 button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid cancel
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_bitmap
+	{
+		name ID_BITMAP1
+		rect 0.006250 0.000000 0.206250 0.088889
+		sprite logo_ui.tga
+	}
+	item_editbox
+	{
+		name ID_TIP
+		rect 0.250000 0.888889 0.750000 0.933333
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.000000 0.000000
+				fontsize 0.022222
+				align center
+			}
+			color1 255 255 255 255
+			color2 255 0 255 255
+			backcolor 0 0 0 0
+			readonly 1
+			multiline 1
+			spacing 0.022222
+		}
+	}
+	item_text
+	{
+		name ID_INFO
+		rect 0.318750 0.433333 0.681250 0.455556
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		color 255 208 208 208
+		backcolor 0 0 0 0
+	}
+}
+
+dialog
+{
+	name idd_password
+	item_text
+	{
+		name ID_TEXT2
+		rect 0.000000 0.000000 1.000000 0.088889
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.022222
+			fontsize 0.066667
+			align right
+		}
+		textid password_title
+		color 255 240 240 240
+		backcolor 127 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP2
+		rect 0.312500 0.333333 0.687500 0.666667
+		sprite dialog600x300.tga
+	}
+	item_darkbox
+	{
+		name ID_DARKBOX1
+		rect 0.318750 0.622222 0.681250 0.655556
+		color 127 0 0 0
+	}
+	item_button
+	{
+		name ID_CANCEL
+		button
+		{
+			rect 0.581250 0.622222 0.681250 0.655556
+			sprite2 b_button2.tga
+			sprite3 b_button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid cancel
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_editbox
+	{
+		name ID_PASSWORD
+		rect 0.443750 0.377778 0.568750 0.400000
+		editbox
+		{
+			password 0
+			text
+			{
+				font main.fnt
+				pos 0.003125 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 208 208 208
+			color2 255 163 163 163
+			backcolor 255 37 37 37
+			readonly 0
+			multiline 0
+			spacing 0.000000
+		}
+	}
+	item_button
+	{
+		name ID_OK
+		button
+		{
+			rect 0.318750 0.622222 0.418750 0.655556
+			sprite2 b_button2.tga
+			sprite3 b_button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid ok
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align left
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_text
+	{
+		name ID_SERVERNAME
+		rect 0.443750 0.344444 0.568750 0.366667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		color 255 163 163 163
+		backcolor 0 0 0 0
+	}
+	item_bitmap
+	{
+		name ID_BITMAP1
+		rect 0.006250 0.000000 0.206250 0.088889
+		sprite logo_ui.tga
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.318750 0.377778 0.443750 0.400000
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid passwordtext
+		color 255 208 208 208
+		backcolor 0 0 0 0
+	}
+	item_text
+	{
+		name ID_TEXT1
+		rect 0.318750 0.344444 0.443750 0.366667
+		text
+		{
+			font main.fnt
+			pos 0.001250 0.000000
+			fontsize 0.022222
+			align left
+		}
+		textid server
+		color 255 208 208 208
+		backcolor 0 0 0 0
+	}
+}
+
+dialog
+{
+	name idd_datamismatch
+	item_bitmap
+	{
+		name ID_BITMAP
+		rect 0.000000 0.000000 1.000000 1.000000
+		sprite bkgrnd.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP1
+		rect 0.006250 0.000000 0.206250 0.088889
+		sprite logo_ui.tga
+	}
+	item_bitmap
+	{
+		name ID_BITMAP2
+		rect 0.250000 0.222222 0.750000 0.777778
+		sprite dialog800x500.tga
+	}
+	item_text
+	{
+		name ID_TEXT
+		rect 0.256250 0.233333 0.743750 0.255556
+		text
+		{
+			font main.fnt
+			pos 0.000000 0.000000
+			fontsize 0.022222
+			align center
+		}
+		textid data_mismatch
+		color 255 208 208 208
+		backcolor 0 0 0 0
+	}
+	item_button
+	{
+		name ID_CLOSE
+		button
+		{
+			rect 0.437500 0.733333 0.562500 0.766667
+			sprite1 button1.tga
+			sprite2 button2.tga
+			sprite3 button3.tga
+			sample1 ui_button_over.wav
+			sample2 ui_button_click.wav
+		}
+		textid close
+		text
+		{
+			font main.fnt
+			pos 0.006250 0.005556
+			fontsize 0.022222
+			align right
+		}
+		color1 255 240 240 240
+		color2 255 240 240 240
+		color3 255 240 240 240
+	}
+	item_list
+	{
+		name ID_LIST
+		list
+		{
+			rect 0.256250 0.266667 0.743750 0.711111
+			spacing 0.022222
+			numcolumns 3
+			columnsize0 0.187500
+			columnsize1 0.250000
+			columnsize2 0.050000
+			selectable 0
+			text
+			{
+				font main.fnt
+				pos 0.001250 0.001111
+				fontsize 0.020000
+				align left
+			}
+			color1 255 163 163 163
+			color2 255 0 0 255
+			color3 255 0 0 128
+			backcolor 255 37 37 37
+			sortbar 0
+			sortbarheight 0.000000
+			sortbartext
+			{
+				pos 0.000000 0.000000
+				fontsize 0.000000
+				align left
+			}
+			sortbartextcolor 0 0 0 0
+			sortbartextcolor2 0 0 0 0
+			sortbartextcolor3 0 0 0 0
+			sortbackcolor 0 0 0 0
+			sort 0
+		}
+		slider
+		{
+			rect 0.731250 0.266667 0.743750 0.711111
+			size 0.022222
+		}
+		sliderwidth 0.012500
+	}
+}
+
