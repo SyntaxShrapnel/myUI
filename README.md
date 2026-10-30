@@ -1,7 +1,6 @@
-# MX Bikes — True Dark Mode UI
+# MX Bikes — UI Editor
 
-Files for the *True Dark Mode* UI mod for MX Bikes, plus a browser-based editor for the
-`.mnu` dialog scripts.
+Files for the *Dark UI* mod for MX Bikes, plus a browser-based editor
 
 | Path | Purpose |
 | --- | --- |
