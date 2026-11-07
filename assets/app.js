@@ -10,9 +10,14 @@
 
   var M = window.MnuFormat;
 
-  // Folder inside this repo holding the mod. Used for the automatic load when
-  // the page is served over HTTP (a file:// page cannot fetch it).
-  var MOD_DIR = 'true dark mode/';
+  // Mod folders inside this repo, offered in the toolbar. The first one is
+  // loaded automatically when the page is served over HTTP (a file:// page
+  // cannot fetch it).
+  var MODS = [
+    { dir: 'mesx5 ui/', label: 'MESX5 UI' },
+    { dir: 'true dark mode/', label: 'True Dark Mode' }
+  ];
+  var modDir = MODS[0].dir;
 
   var PRESETS = [
     [1280, 720], [1600, 900], [1920, 1080], [2560, 1440], [3840, 2160],
@@ -51,9 +56,9 @@
   var els = {};
   [
     'btn-folder', 'btn-files', 'btn-undo', 'btn-redo', 'btn-save', 'btn-save-all',
-    'btn-help', 'ratio-label', 'base-select', 'search', 'tree', 'btn-expand',
-    'btn-collapse', 'stage', 'canvas', 'stage-empty', 'stage-info', 'opt-grid',
-    'opt-labels', 'opt-sprites', 'btn-source', 'inspector', 'status', 'cursor',
+    'btn-help', 'ratio-label', 'base-select', 'mod-select', 'search', 'tree',
+    'btn-expand', 'btn-collapse', 'stage', 'canvas', 'stage-empty', 'stage-info',
+    'opt-grid', 'opt-labels', 'opt-sprites', 'btn-source', 'inspector', 'status', 'cursor',
     'file-input', 'dir-input', 'help-dialog', 'source-dialog', 'source-title',
     'source-text', 'source-note', 'btn-copy-source', 'btn-close-source'
   ].forEach(function (id) {
@@ -133,7 +138,7 @@
     candidates.push(String(name).toLowerCase());
     for (var i = 0; i < candidates.length; i++) {
       try {
-        var res = await fetch(encodeURI(MOD_DIR + candidates[i]));
+        var res = await fetch(encodeURI(modDir + candidates[i]));
         if (res.ok) return await res.arrayBuffer();
       } catch (err) { /* try the next spelling */ }
     }
@@ -244,7 +249,7 @@
 
   async function loadBundled() {
     try {
-      var uiRes = await fetch(encodeURI(MOD_DIR + 'ui.ui'));
+      var uiRes = await fetch(encodeURI(modDir + 'ui.ui'));
       if (!uiRes.ok) throw new Error('ui.ui not reachable');
       var uiText = await uiRes.text();
       applyRatio(M.parseRatio(uiText));
@@ -257,7 +262,7 @@
       var docs = [];
       for (var i = 0; i < names.length; i++) {
         try {
-          var res = await fetch(encodeURI(MOD_DIR + names[i]));
+          var res = await fetch(encodeURI(modDir + names[i]));
           if (!res.ok) continue;
           docs.push(createDoc(names[i], await res.text(), { source: 'bundled' }));
         } catch (err) { /* skip unreadable menu */ }
@@ -266,12 +271,12 @@
 
       state.bundledAvailable = true;
       try {
-        var strRes = await fetch(encodeURI(MOD_DIR + 'english.str'));
+        var strRes = await fetch(encodeURI(modDir + 'english.str'));
         if (strRes.ok) loadStrings(await strRes.text());
       } catch (err) { /* strings are optional */ }
 
       addDocs(docs);
-      setStatus('Loaded the bundled "true dark mode" mod — save downloads the file');
+      setStatus('Loaded the bundled "' + modLabel(modDir) + '" mod — save downloads the file');
     } catch (err) {
       setStatus('Open the mod folder to start');
     }
@@ -797,7 +802,9 @@
       case 'item_button':
       case 'item_tab': {
         if (!visible) break;
-        var buttonSprite = M.childValue(item, 'sprite2') || M.childValue(item, 'sprite1');
+        // Button and tab artwork live in the item's nested button/tab block.
+        var buttonBlock = M.child(item, 'button') || M.child(item, 'tab') || item;
+        var buttonSprite = M.childValue(buttonBlock, 'sprite2') || M.childValue(buttonBlock, 'sprite1');
         if (!(showSprites && drawSpriteIn(ctx, buttonSprite, box))) {
           drawPlaceholder(ctx, box, '');
         }
@@ -1788,6 +1795,14 @@
       setStatus('Base resolution ' + state.base.w + ' × ' + state.base.h);
     });
 
+    els.modSelect.addEventListener('change', function () {
+      modDir = els.modSelect.value;
+      dropBundledDocs();
+      spriteCache.clear();
+      spritePending.clear();
+      loadBundled();
+    });
+
     els.optGrid.addEventListener('change', function () {
       state.showGrid = els.optGrid.checked;
       renderCanvas();
@@ -1905,8 +1920,25 @@
     }
   }
 
+  function populateModSelect() {
+    els.modSelect.textContent = '';
+    MODS.forEach(function (mod) {
+      var option = document.createElement('option');
+      option.value = mod.dir;
+      option.textContent = mod.label;
+      els.modSelect.append(option);
+    });
+    els.modSelect.value = modDir;
+  }
+
+  function modLabel(dir) {
+    var found = MODS.find(function (mod) { return mod.dir === dir; });
+    return found ? found.label : dir;
+  }
+
   function boot() {
     bindEvents();
+    populateModSelect();
     applyRatio(null);
     fitStage();
     layoutCanvas();

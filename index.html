@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MX Bikes MNU Editor — True Dark Mode</title>
+<title>MX Bikes MNU Editor</title>
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
@@ -19,6 +19,9 @@
   <span class="field"><span class="field-label">Ratio</span><span id="ratio-label" class="badge">16:9</span></span>
   <label class="field"><span class="field-label">Base</span>
     <select id="base-select" title="W and H used by the rect formula"></select>
+  </label>
+  <label class="field"><span class="field-label">Mod</span>
+    <select id="mod-select" title="Bundled mod to preview when the page is served from this repo"></select>
   </label>
 
   <div class="grow"></div>
@@ -101,7 +104,8 @@ Height = round(Y2 * H) - Y</pre>
     <ul>
       <li><b>Open mod folder</b> gives the editor write access, so <b>Save</b> writes straight back into the folder.</li>
       <li><b>Open files</b> (or dragging files onto the page) cannot write to disk, so <b>Save</b> downloads the file.</li>
-      <li>When the editor is served from this repo it tries to load <code>true dark mode/</code> automatically;
+      <li>When the editor is served from this repo it loads the mod chosen in the
+          <b>Mod</b> dropdown automatically (<code>mesx5 ui/</code> or <code>true dark mode/</code>);
           saving then downloads the file.</li>
     </ul>
 
