@@ -126,20 +126,84 @@ check('main.mnu draws only sprites this mod ships', () => {
   assert.deepStrictEqual(missing, [], 'missing: ' + missing.join(', '));
 });
 
-check('every shipped TGA decodes', () => {
+// A strict reader for the stream a game's TGA loader will actually walk:
+// uncompressed images must be exactly sized, RLE packets must not cross a
+// scanline, and nothing may be left over. Our decoder is lenient, so this is
+// the check that keeps a malformed sprite from reaching the game.
+function checkStream(buffer, name) {
+  const width = buffer.readUInt16LE(12);
+  const height = buffer.readUInt16LE(14);
+  const bpp = buffer[16];
+  const type = buffer[2];
+  const descriptor = buffer[17];
+  const bytesPerPixel = bpp / 8;
+  const pixels = width * height;
+
+  assert(bpp === 24 || bpp === 32, name + ': unsupported depth ' + bpp);
+  assert.strictEqual(descriptor & 0x20, 0, name + ': expected bottom-up rows');
+  assert.strictEqual(descriptor & 0x0f, bpp === 32 ? 8 : 0, name + ': attribute bits');
+
+  if (type === 2) {
+    assert.strictEqual(buffer.length, 18 + pixels * bytesPerPixel, name + ': uncompressed size');
+    return;
+  }
+  assert.strictEqual(type, 10, name + ': unexpected image type ' + type);
+
+  let pos = 18;
+  let pixel = 0;
+  while (pixel < pixels) {
+    assert(pos < buffer.length, name + ': stream ends at pixel ' + pixel);
+    const packet = buffer[pos++];
+    const count = (packet & 0x7f) + 1;
+    assert(count <= width - (pixel % width), name + ': packet crosses a scanline at pixel ' + pixel);
+    if (packet & 0x80) {
+      assert(pos + bytesPerPixel <= buffer.length, name + ': truncated run at pixel ' + pixel);
+      pos += bytesPerPixel;
+    } else {
+      const need = count * bytesPerPixel;
+      assert(pos + need <= buffer.length, name + ': truncated raw packet at pixel ' + pixel + ' (' + (buffer.length - pos) + ' of ' + need + ' bytes)');
+      pos += need;
+    }
+    pixel += count;
+  }
+  assert.strictEqual(pos, buffer.length, name + ': ' + (buffer.length - pos) + ' trailing bytes');
+}
+
+check('every shipped TGA decodes and has a strict, row-safe stream', () => {
   const files = fs.readdirSync(NEW_DIR).filter((f) => /\.tga$/i.test(f));
   assert(files.length > 150, 'expected the full chrome set, found ' + files.length + ' sprites');
   for (const name of files) {
-    const image = Tga.decode(fs.readFileSync(path.join(NEW_DIR, name)));
+    const buffer = fs.readFileSync(path.join(NEW_DIR, name));
+    const image = Tga.decode(buffer);
     assert(image.width > 0 && image.height > 0, name + ': no pixels');
+
+    // Files copied byte-for-byte from the Dark UI mod are original artwork the
+    // game already loads; their legacy encoder pads a few bytes after the
+    // image, so they are only checked by decoding.
+    const oldFile = path.join(OLD_DIR, name);
+    if (fs.existsSync(oldFile) && fs.readFileSync(oldFile).equals(buffer)) continue;
+
+    checkStream(buffer, name);
   }
 });
 
-check('wallpapers are full-screen and opaque', () => {
+check('replaced sprites keep the original pixel size', () => {
+  for (const name of fs.readdirSync(NEW_DIR).filter((f) => /\.tga$/i.test(f))) {
+    const oldFile = path.join(OLD_DIR, name);
+    if (!fs.existsSync(oldFile)) continue;
+    const before = Tga.decode(fs.readFileSync(oldFile));
+    const after = Tga.decode(fs.readFileSync(path.join(NEW_DIR, name)));
+    assert.strictEqual(after.width, before.width, name + ': width');
+    assert.strictEqual(after.height, before.height, name + ': height');
+  }
+});
+
+check('wallpapers match the Dark UI size and are opaque', () => {
   for (const name of ['bkgrnd.tga', 'splash.tga']) {
+    const before = Tga.decode(fs.readFileSync(path.join(OLD_DIR, name)));
     const image = Tga.decode(fs.readFileSync(path.join(NEW_DIR, name)));
-    assert.strictEqual(image.width, 1920, name + ': width');
-    assert.strictEqual(image.height, 1080, name + ': height');
+    assert.strictEqual(image.width, before.width, name + ': width');
+    assert.strictEqual(image.height, before.height, name + ': height');
     for (let i = 3; i < image.rgba.length; i += 4) {
       if (image.rgba[i] !== 255) throw new Error(name + ': alpha at byte ' + i);
     }

@@ -378,10 +378,16 @@ function downscale(image, width, height) {
  * TGA writer
  * ------------------------------------------------------------------ */
 
+/*
+ * Sprite formats mirror the Dark UI files exactly, which is what the game
+ * loads reliably: chrome is uncompressed 32-bit, the full-screen wallpapers
+ * are RLE 24-bit. RLE packets are flushed at every scanline, because decoders
+ * (Pillow, and the game's own loader) reject packets that cross a row.
+ */
 function writeTga(file, image, options) {
   const opts = options || {};
   const bpp = opts.bpp || 32;
-  const rle = opts.rle !== false;
+  const rle = opts.rle === undefined ? bpp === 24 : opts.rle !== false;
   const topDown = opts.topDown === true;
   const header = Buffer.alloc(18);
   header[2] = rle ? 10 : 2;
@@ -424,22 +430,25 @@ function writeTga(file, image, options) {
   } else {
     const chunks = [];
     const stride = bytesPerPixel;
-    const total = image.w * image.h;
     const same = (a, b) => pixels[a] === pixels[b] && pixels[a + 1] === pixels[b + 1] &&
       pixels[a + 2] === pixels[b + 2] && (stride === 3 || pixels[a + 3] === pixels[b + 3]);
-    let i = 0;
-    while (i < total) {
-      let run = 1;
-      while (i + run < total && run < 128 && same(i * stride, (i + run) * stride)) run++;
-      if (run > 1) {
-        chunks.push(Buffer.from([0x80 | (run - 1)]), pixels.subarray(i * stride, i * stride + stride));
-        i += run;
-        continue;
+    for (let row = 0; row < image.h; row++) {
+      let x = 0;
+      while (x < image.w) {
+        const index = row * image.w + x;
+        let run = 1;
+        while (x + run < image.w && run < 128 && same(index * stride, (index + run) * stride)) run++;
+        if (run > 1) {
+          chunks.push(Buffer.from([0x80 | (run - 1)]), pixels.subarray(index * stride, index * stride + stride));
+          x += run;
+          continue;
+        }
+        let raw = 1;
+        while (x + raw < image.w && raw < 128 &&
+          !same((index + raw - 1) * stride, (index + raw) * stride)) raw++;
+        chunks.push(Buffer.from([raw - 1]), pixels.subarray(index * stride, (index + raw) * stride));
+        x += raw;
       }
-      let raw = 1;
-      while (i + raw < total && raw < 128 && !same((i + raw - 1) * stride, (i + raw) * stride)) raw++;
-      chunks.push(Buffer.from([raw - 1]), pixels.subarray(i * stride, (i + raw) * stride));
-      i += raw;
     }
     body = Buffer.concat(chunks);
   }
@@ -846,10 +855,8 @@ function coolOverlay(image, opts) {
 function wallpaper(sourceFile, opts) {
   const o = opts || {};
   const decoded = Tga.decode(fs.readFileSync(sourceFile));
-  let image = { w: decoded.width, h: decoded.height, data: decoded.rgba };
-  if (image.w > 1920 || image.h > 1080) {
-    image = downscale(image, 1920, 1080);
-  }
+  // Same pixel size as the Dark UI wallpapers, which the game loads today.
+  const image = { w: decoded.width, h: decoded.height, data: decoded.rgba };
   const graded = gradePhoto(image, o);
   coolOverlay(graded, o);
   vignette(graded, o.vignette === undefined ? 0.5 : o.vignette);
@@ -870,7 +877,7 @@ function wallpaper(sourceFile, opts) {
       }
     }
   }
-  grain(graded, o.grainAmount === undefined ? 7 : o.grainAmount);
+  // No grain on the wallpapers: noise defeats RLE and triples the file size.
   return graded;
 }
 
@@ -955,7 +962,9 @@ function main(argv) {
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
   /* ---- main menu tiles ---- */
-  buttonSet('main', 340, 40);
+  // main1/main2 never existed in the Dark UI mod and are no longer referenced:
+  // the hub tiles below replace the old main-button art everywhere it was used.
+  emit('main3.tga', pill(340, 40, 3), { bpp: 32 });
   emit('mainexit2.tga', plate(340, 40, { tint: 'pink' }), { bpp: 32 });
   emit('mainexit3.tga', plate(340, 40, { tint: 'pink', active: true }), { bpp: 32 });
 
@@ -974,9 +983,7 @@ function main(argv) {
     'mesx_tile_s_2.tga': [534, 108, {}],
     'mesx_tile_s_3.tga': [534, 108, { active: true }],
     'mesx_tile_r_2.tga': [534, 180, {}],
-    'mesx_tile_r_3.tga': [534, 180, { active: true }],
-    'mesx_tile_xs_2.tga': [240, 56, {}],
-    'mesx_tile_xs_3.tga': [240, 56, { active: true }]
+    'mesx_tile_r_3.tga': [534, 180, { active: true }]
   };
   for (const [name, [w, h, opts]] of Object.entries(tiles)) {
     emit(name, plate(w, h, opts), { bpp: 32 });
@@ -1076,9 +1083,13 @@ function main(argv) {
   emit('b_home1.tga', iconButton(32, 'home'), { bpp: 32 });
   emit('b_home2.tga', iconButton(32, 'home'), { bpp: 32 });
   emit('b_home3.tga', iconButton(32, 'home'), { bpp: 32 });
-  emit('refresh1.tga', iconButton(64, 'refresh'), { bpp: 32 });
-  emit('refresh2.tga', iconButton(64, 'refresh'), { bpp: 32 });
-  emit('refresh3.tga', iconButton(64, 'refresh'), { bpp: 32 });
+  // refresh sprites are 64x32 in the Dark UI mod, so draw them wide.
+  for (const [name, state] of [['refresh1.tga', 2], ['refresh2.tga', 2], ['refresh3.tga', 3]]) {
+    const c = pillButton(64, 32, state, null);
+    strokeArc(c, 32, 16, 8, 2.4, Math.PI * 0.25, Math.PI * 1.82, rgba(C.ice, 255));
+    polygon(c, [[38, 8], [46, 13], [37, 19]], rgba(C.ice, 255));
+    emit(name, c, { bpp: 32 });
+  }
   for (const state of [1, 2, 3]) {
     emit('plus' + state + '.tga', iconButton(32, 'plus'), { bpp: 32 });
     emit('minus' + state + '.tga', iconButton(32, 'minus'), { bpp: 32 });
@@ -1110,26 +1121,8 @@ function main(argv) {
   buildDialogs();
   emit('logo_ui.tga', wordmark(), { bpp: 32 });
 
-  for (const [name, shadow] of [['pointer.tga', false], ['pointer_shadow.tga', true]]) {
-    const c = canvas(48, 64);
-    const color = shadow ? rgba([0, 0, 0], 150) : rgba(C.ice, 255);
-    const outline = shadow ? rgba([0, 0, 0], 150) : rgba(C.blueDeep, 255);
-    const pts = [[0, 0], [0, 0.72], [0.2, 0.56], [0.36, 0.94], [0.52, 0.86], [0.36, 0.5], [0.6, 0.48]];
-    const box = { x: 3, y: 2, w: 40, h: 58 };
-    const offset = shadow ? 2 : 0;
-    const shifted = { x: box.x + offset, y: box.y + offset, w: box.w, h: box.h };
-    if (shadow) {
-      stroke(c, shifted, pts, 4, outline, true);
-      polygon(c, pts.map((p) => [shifted.x + p[0] * shifted.w, shifted.y + p[1] * shifted.h]), outline);
-    } else {
-      stroke(c, box, pts, 5, outline, true);
-      polygon(c, pts.map((p) => [box.x + p[0] * box.w, box.y + p[1] * box.h]), outline);
-      const inner = { x: box.x + 2, y: box.y + 2, w: box.w - 4, h: box.h - 4 };
-      stroke(c, inner, pts, 3, color, true);
-      polygon(c, pts.map((p) => [inner.x + p[0] * inner.w, inner.y + p[1] * inner.h]), color);
-    }
-    emit(name, c, { bpp: 32 });
-  }
+  // No pointer.tga / pointer_shadow.tga: ui.ui asks for them at startup and the
+  // base game's cursor is what the Dark UI mod has always used, so leave it alone.
 
   /* ---- wallpapers ---- */
   emit('bkgrnd.tga', wallpaper(path.join(OLD_DIR, 'bkgrnd.tga'), {

@@ -63,6 +63,11 @@ node tools/mesx5-layout.js    # re-apply the main-menu tile grid
 
 `mesx5-art.js` draws every sprite procedurally (no image editing), so the art
 is reproducible and diffable; the wallpapers are graded from `true dark mode/`.
+Files use the same TGA shapes as the Dark UI mod, which is what the game loads:
+chrome is uncompressed 32-bit, the two wallpapers are RLE 24-bit at the original
+3840 × 2160, and RLE packets never cross a scanline (`tests/mesx5.test.js`
+rejects any generated sprite that does, because strict loaders do; artwork
+copied unchanged from the Dark UI mod keeps its original bytes).
 `mesx5-colors.js` only rewrites the four numbers on colour lines — greys are
 mapped onto the ink/ice ramp by luminance, saturated colours onto the
 blue/green/magenta accents. `mesx5-layout.js` rewrites only rect, sprite and
